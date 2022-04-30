@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Header from "./components/Header";
+import { motion, useMotionValue, useTransform } from "framer-motion";
+import Mission from "./components/Mission";
+import Info from "./components/Info";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div class="overflow-visible ">
+      <div style={{ height: "100vh" }}>
+        <Header />
+      </div>
+      <main>
+        <section>
+          <Mission />
+        </section>
+        <section>
+          <Info />
+        </section>
+      </main>
     </div>
   );
 }
 
 export default App;
+//  <motion.div
+//   style={{ height: 300, width: 300, background: "red" }}
+//   initial="hidden"
+//   whileInView="visible"
+//   viewport={{ once: true }}
+//   transition={{ duration: 0.3 }}
+//   variants={{
+//     visible: { opacity: 1, scale: 1 },
+//     hidden: { opacity: 0, scale: 0 },
+//   }}
+// />
