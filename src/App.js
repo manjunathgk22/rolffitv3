@@ -4,10 +4,12 @@ import Header from "./components/Header";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import Mission from "./components/Mission";
 import Info from "./components/Info";
+import Boxes from "./components/Boxes";
+import HowItWorks from "./components/HowItWorks";
 
 function App() {
   return (
-    <div class="overflow-visible ">
+    <div className="overflow-visible ">
       <div style={{ height: "100vh" }}>
         <Header />
       </div>
@@ -17,6 +19,12 @@ function App() {
         </section>
         <section>
           <Info />
+        </section>
+        <section>
+          <Boxes />
+        </section>
+        <section>
+          <HowItWorks />
         </section>
       </main>
     </div>
