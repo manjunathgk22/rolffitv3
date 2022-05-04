@@ -15,6 +15,7 @@ import Checklist from "./components/Checklist/Checklist";
 import Contact from "./components/Contact";
 import anime from "./assets/images/logo_animation_black.gif";
 import WhyWe from "./components/WhyWe";
+import WhyWeSlider from "./components/WhyWeSlider";
 // const Header = lazy(() => "./components/Header");
 // const Mission = lazy(() => import("./components/Mission"));
 // const Info = lazy(() => import("./components/Info"));
@@ -41,54 +42,45 @@ function App() {
         </div>
         <main>
           <section>
-            <Suspense fallback={() => <div></div>}>
-              <FadeInWhenVisible>
-                <Mission />
-              </FadeInWhenVisible>
-            </Suspense>
+            <FadeInWhenVisible>
+              <Mission />
+            </FadeInWhenVisible>
           </section>
           <section>
-            <Suspense fallback={() => <div></div>}>
-              <FadeInWhenVisible>
-                <Info />
-              </FadeInWhenVisible>
-            </Suspense>
+            <FadeInWhenVisible>
+              <Info />
+            </FadeInWhenVisible>
           </section>
           <section>
-            <Suspense fallback={() => <div></div>}>
-              <FadeInWhenVisible>
-                <HowItWorks />
-              </FadeInWhenVisible>
-            </Suspense>
+            <FadeInWhenVisible>
+              <HowItWorks />
+            </FadeInWhenVisible>
           </section>
           <section>
-            <Suspense fallback={() => <div></div>}>
-              <FadeInWhenVisible>
-                <WhyWe />
-              </FadeInWhenVisible>
-            </Suspense>
+            <FadeInWhenVisible>
+              <WhyWe />
+            </FadeInWhenVisible>
           </section>
           <section>
-            <Suspense fallback={() => <div></div>}>
-              <FadeInWhenVisible>
-                <Boxes />
-              </FadeInWhenVisible>
-            </Suspense>
+            <FadeInWhenVisible>
+              <WhyWeSlider />
+            </FadeInWhenVisible>
           </section>
+          {/* <section>
+            <FadeInWhenVisible>
+              <Boxes />
+            </FadeInWhenVisible>
+          </section> */}
 
           {/* <section>
-            <Suspense fallback={() => <div></div>}>
               <FadeInWhenVisible>
                 <Accordion />
               </FadeInWhenVisible>
-            </Suspense>
           </section> */}
           <section>
-            <Suspense fallback={() => <div></div>}>
-              <FadeInWhenVisible>
-                <Contact />
-              </FadeInWhenVisible>
-            </Suspense>
+            <FadeInWhenVisible>
+              <Contact />
+            </FadeInWhenVisible>
           </section>
         </main>
       </div>
