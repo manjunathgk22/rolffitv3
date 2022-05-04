@@ -34,7 +34,7 @@ function HowItWorks() {
           }}
         >
           {dots?.map((item) => (
-            <div className="dotWrapper flex whitespace-nowrap w-full md:w-auto min-w-full md:min-w-[auto]">{item}</div>
+            <div className="dotWrapper flex whitespace-nowrap w-5/6 md:w-auto min-w-[83%] md:min-w-[auto]">{item}</div>
           ))}
         </div>
       );
