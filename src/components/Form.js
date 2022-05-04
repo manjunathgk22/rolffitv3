@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import bg from "../assets/images/gradient-form.png";
 import "./Form.css";
 import { db } from "../firebase";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
+import congratsanime from "../assets/images/congrats.gif";
 const phoneRegex = `^[6-9]{1}[0-9]{9}$`;
 function Form() {
+  const gif = useRef(null);
   const [submitted, setsubmitted] = useState(false);
   const [formData, setformData] = useState({
     name: "",
@@ -92,7 +94,8 @@ function Form() {
       <div data-v-92f136c4="" className="form-content w-full bg-[#72717A] px-12 flex items-center justify-center relative">
         {submitted ? (
           <div className="w-full h-full flex justify-center items-center">
-            <div className="text-white font-bold lg:text-6xl text-4xl text-center">Our team will contact you soon</div>
+            <img ref={gif} src={congratsanime} alt="animation gif" />
+            <canvas />
           </div>
         ) : (
           <form class="">
