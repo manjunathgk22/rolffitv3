@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Slider from "react-slick/lib/slider";
 import "./HowItWorks.css";
 import { motion } from "framer-motion";
@@ -6,6 +6,7 @@ import tent from "../assets/images/tent.jpg";
 
 const dotsText = ["Quick setup", "Special Chair Therapy", "Expert therapists", "Authentic massage products"];
 function HowItWorks() {
+  const dotRef = useRef(null);
   const settings = {
     dots: true,
     infinite: true,
@@ -16,12 +17,12 @@ function HowItWorks() {
     pauseOnHover: false,
     // fade: true,
     arrows: false,
-    // autoplay: true,
+    autoplay: true,
     slidesToScroll: 1,
     autoplaySpeed: 3000,
     animating: false,
     appendDots: (dots) => {
-      console.log("dots", dots);
+      console.log("dots", dotRef.current);
       return (
         <div
           style={{
@@ -29,12 +30,11 @@ function HowItWorks() {
             borderRadius: "10px",
             padding: "10px",
             display: "flex",
-            justifyContent: "space-evenly",
             paddingTop: "2rem",
           }}
         >
           {dots?.map((item) => (
-            <div className="dotWrapper">{item}</div>
+            <div className="dotWrapper flex whitespace-nowrap w-full md:w-auto min-w-full md:min-w-[auto]">{item}</div>
           ))}
         </div>
       );
@@ -50,12 +50,16 @@ function HowItWorks() {
         </div>
       );
     },
-    beforeChange: (...props) => {
-      // console.log("qqq", props);
+    beforeChange: (page) => {
+      console.log("qqq", page);
+      debugger;
+      if (window.innerWidth < 640) {
+        const wrapper = dotRef.current.getElementsByClassName("slick-dots")[0];
+        console.log("www", wrapper.srcollLeft, page);
+        if (wrapper) wrapper.scrollLeft = wrapper.getElementsByTagName("li")[0]?.clientWidth * ((page + 1) % 3);
+      }
     },
-    afterChange: (...props) => {
-      // console.log("www", props);
-    },
+    afterChange: (...page) => {},
   };
   const variants = {
     visible: { opacity: 1, background: "red" },
@@ -63,11 +67,11 @@ function HowItWorks() {
   };
   return (
     <div style={{ backgroundColor: "#f9f1e4" }} className={`relative py-8 clipTop clipbottom`}>
-      <div className="max-w-6xl container m-auto p-4">
+      <div ref={dotRef} className="max-w-6xl container m-auto p-4">
         <div className="h5 sm:h4 md:h3 text-6xl font-bold text-center mb-8">how it works</div>
         <Slider {...settings}>
           <div>
-            <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }} className="mb-8">
+            <div style={{}} className="mb-8 flex-col justify-center items-center md:flex md:flex-row">
               <div className="animate-left">
                 <div style={{ margin: "2rem", height: "350px", width: "auto", backgroundSize: "cover", backgroundRepeat: "no-repeat", position: "relative" }} className=" bg-[url('/src/assets/images/tent.jpg')]">
                   {/* <img style={{ width: "100%", boxSizing: "border-box", margin: "0" }} className="image lg:h-96 md:h-80 h-44" src={tent} alt="" height="2197" width="2813" data-mobile-image-width="1024" data-mobile-image-height="800" />{" "} */}
@@ -91,7 +95,7 @@ function HowItWorks() {
             </div>
           </div>
           <div>
-            <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }} className="mb-8">
+            <div style={{}} className="mb-8 flex-col justify-center items-center md:flex md:flex-row">
               <div className="animate-left">
                 {/* <img className="image lg:h-96 md:h-80 h-44" style={{ width: "100%", boxSizing: "border-box", padding: "2rem", margin: "0" }} src="https://www.plan.london/wp-content/uploads/2021/11/Icons-Final-17.png" data-src="https://www.plan.london/wp-content/uploads/2021/11/Icons-Final-17.png" alt="" height="2197" width="2813" data-mobile-image="https://www.plan.london/wp-content/uploads/2021/11/Icons-Final-17.png" data-mobile-image-width="1024" data-mobile-image-height="800" />{" "} */}
                 <div style={{ margin: "2rem", height: "350px", width: "auto", backgroundSize: "cover", backgroundRepeat: "no-repeat", position: "relative" }} className=" bg-[url('/src/assets/images/chair.png')]">
@@ -113,7 +117,7 @@ function HowItWorks() {
             </div>
           </div>
           <div>
-            <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }} className="mb-8">
+            <div style={{}} className="mb-8 flex-col justify-center items-center md:flex md:flex-row">
               <div className="animate-left">
                 {/* <img className="image lg:h-96 md:h-80 h-44" style={{ width: "100%", boxSizing: "border-box", padding: "2rem", margin: "0" }} src="https://www.plan.london/wp-content/uploads/2021/11/Icons-Final-17.png" data-src="https://www.plan.london/wp-content/uploads/2021/11/Icons-Final-17.png" alt="" height="2197" width="2813" data-mobile-image="https://www.plan.london/wp-content/uploads/2021/11/Icons-Final-17.png" data-mobile-image-width="1024" data-mobile-image-height="800" />{" "} */}
                 <div style={{ margin: "2rem", height: "350px", width: "auto", backgroundSize: "cover", backgroundRepeat: "no-repeat", position: "relative" }} className=" bg-[url('/src/assets/images/therapist.jpeg')]">
@@ -137,7 +141,7 @@ function HowItWorks() {
             </div>
           </div>
           {/* <div>
-          <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }} className="mb-8">
+          <div style={{  }} className="mb-8 flex-col justify-center items-center md:flex md:flex-row">
             <div className="animate-left">
               <img className="image lg:h-96 md:h-80 h-44" style={{ width: "100%", boxSizing: "border-box", padding: "2rem", margin: "0" }} src="https://www.plan.london/wp-content/uploads/2021/11/Icons-Final-17.png" data-src="https://www.plan.london/wp-content/uploads/2021/11/Icons-Final-17.png" alt="" height="2197" width="2813" data-mobile-image="https://www.plan.london/wp-content/uploads/2021/11/Icons-Final-17.png" data-mobile-image-width="1024" data-mobile-image-height="800" />{" "}
             </div>

@@ -29,6 +29,12 @@
   transform: translateY(75%);
   width: 240px;
 }
+@media (max-width: 767.98px) {
+  .highlighbottom:before {
+    width: 100px;
+    padding-top: 4px;
+  }
+}
 
 .whitesvg path {
   fill: #fff;

@@ -24,6 +24,7 @@
   position: relative;
   z-index: 110;
   height: 100%;
+  min-height: 430px;
 }
 .form-avatar[data-v-92f136c4] {
   position: absolute;

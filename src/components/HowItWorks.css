@@ -1,6 +1,25 @@
 .slick-dots li {
   width: auto;
 }
+@media screen and (max-width: 768px) {
+  ::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+  .slick-dots li {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+.slick-dots {
+  overflow: auto;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 768px) {
+  .slick-dots {
+    justify-content: flex-start;
+    padding: 2rem 0px 10px !important;
+  }
+}
 
 .slick-dots .slick-active .dotText {
   /* color: red; */
@@ -46,6 +65,12 @@
   flex: 1;
   margin-left: 2rem;
 }
+@media screen and (max-width: 768px) {
+  .slick-current .animate-left,
+  .slick-current .animate-right {
+    width: 100%;
+  }
+}
 @keyframes animateLeft {
   from {
     opacity: 0;
@@ -75,6 +100,12 @@
 
 .wheatsvg path {
   fill: #f9f1e4;
+}
+.wheatsvg {
+  transform: scale(1.015);
+}
+svg {
+  transform: scale(1.015);
 }
 .clipTop:after {
   content: "";

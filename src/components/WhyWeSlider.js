@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Slider from "react-slick/lib/slider";
 import "./HowItWorks.css";
 import { motion } from "framer-motion";
@@ -7,6 +7,7 @@ import Styles from "./Boxes.module.css";
 
 const dotsText = ["Quick setup", "Special Chair Therapy", "Expert therapists", "Authentic massage products"];
 function WhyWeSlider() {
+  const dotRef = useRef(null);
   const settings = {
     dots: true,
     infinite: true,
@@ -17,7 +18,7 @@ function WhyWeSlider() {
     pauseOnHover: false,
     // fade: true,
     arrows: false,
-    // autoplay: true,
+    autoplay: true,
     slidesToScroll: 1,
     autoplaySpeed: 3000,
     animating: false,
@@ -30,12 +31,11 @@ function WhyWeSlider() {
             borderRadius: "10px",
             padding: "10px",
             display: "flex",
-            justifyContent: "space-evenly",
             paddingTop: "2rem",
           }}
         >
           {dots?.map((item) => (
-            <div className="dotWrapper">{item}</div>
+            <div className="dotWrapper flex whitespace-nowrap min-w-full md:min-w-[auto]">{item}</div>
           ))}
         </div>
       );
@@ -51,8 +51,13 @@ function WhyWeSlider() {
         </div>
       );
     },
-    beforeChange: (...props) => {
+    beforeChange: (page) => {
       // console.log("qqq", props);
+      if (window.innerWidth < 640) {
+        const wrapper = dotRef.current.getElementsByClassName("slick-dots")[0];
+        console.log("www", wrapper.srcollLeft, page);
+        if (wrapper) wrapper.scrollLeft = wrapper.getElementsByTagName("li")[0]?.clientWidth * (page + 1);
+      }
     },
     afterChange: (...props) => {
       // console.log("www", props);
@@ -64,7 +69,7 @@ function WhyWeSlider() {
   };
   return (
     <div className={`relative py-8 clipTop clipbottom`}>
-      <div className="max-w-6xl container m-auto p-4">
+      <div ref={dotRef} className="max-w-6xl container m-auto p-4">
         <Slider {...settings}>
           <div>
             <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }} className="mb-8">
