@@ -89,7 +89,7 @@ function Form() {
     });
   };
   return (
-    <div data-v-92f136c4="" data-v-f5337e4e="" className="MultiStepForm__wrapper w-full">
+    <div data-v-92f136c4="" data-v-f5337e4e="" className="MultiStepForm__wrapper w-full mt-8 sm:mt-0">
       {/* <img data-v-92f136c4="" data-src="/_nuxt/img/gradient-form-background.183a1bd.png" className="form-bg lazyloaded" src={bg} /> */}
       <div data-v-92f136c4="" className="form-content w-full bg-[#72717A] px-12 flex items-center justify-center relative">
         {submitted ? (
