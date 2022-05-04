@@ -1,4 +1,7 @@
 import React from "react";
+import { FadeInWhenVisible } from "../Animate/FadeInWhenVisible";
+import HeightAnimate from "../Animate/HeightAnimate";
+import missionimg from "../assets/images/mission.jpeg";
 
 function Mission() {
   return (
@@ -6,19 +9,18 @@ function Mission() {
       <div className="w-full md:w-1/2 xl:w-2/5 md:pt-4 md:pr-7 lg:pr-12 xl:pr-17">
         <h2 className="text-3xl md:text-4xl lg:text-7xl font-extrabold text-center md:text-left">our mission is simple...</h2>
 
-        <div className="text-sm font-comfort font-light md:text-lg pb-4 mt-6 text-center md:text-left">
-          <p className="larger-normal-text">to create a better life for people and pups.</p>
+        <div className="text-sm font-comfort font-light md:text-lg pb-4 mt-12 text-center md:text-left">
           <p className="larger-normal-text">
-            We are puppy therapy specialists who bring a litter of gorgeous puppies to your office, create a dedicated puppy-safe environment, and then welcome staff members to come and stock up on cuddles and belly rubs.
+            We believe that happy and stress-free employees drive a successful business. Our mission is to break workplace stress through different relaxation aids. We aim to provide quality services to companies looking to build a healthy and motivated workforce. We strive to create moments of joy and immersive in-office bonding experiences.
             <br />
           </p>
         </div>
 
-        <div className="flex justify-center md:justify-start">
+        {/* <div className="flex justify-center md:justify-start">
           <a className="btn pink" href="https://www.pawsinwork.com/about-us" target="">
             <span>more about us</span>
           </a>
-        </div>
+        </div> */}
       </div>
 
       <div className="w-full md:w-1/2 xl:w-3/5 relative mb-8 md:mb-0">
@@ -26,7 +28,7 @@ function Mission() {
           <img
             alt="Mission statement"
             className="w-full h-full"
-            src="https://pawsinwork.imgix.net/images/mission-statement.png?auto=compress%2Cformat&amp;crop=focalpoint&amp;fit=min&amp;fm=jpg&amp;fp-x=0.5&amp;fp-y=0.5&amp;q=95&amp;ratio=2000%2F1333&amp;w=2560&amp;s=38a4bd1315aeac40cc6611ee61e10fe2"
+            src={missionimg}
             sizes="auto"
             style={{
               objectFit: "cover",

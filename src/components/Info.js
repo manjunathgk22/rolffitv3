@@ -1,5 +1,8 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
-
+import massage from "../assets/images/Scalp.svg";
+import wellness from "../assets/images/Increased.svg";
+import benefits from "../assets/images/Employee.svg";
 function Info() {
   return (
     <div className="w-full border-t border-grey-alto">
@@ -7,7 +10,8 @@ function Info() {
         <div className="w-full md:w-1/2 lg:w-1/3 flex flex-wrap px-8 pb-12 sm:pb-18 content-between">
           <div className="w-full">
             <div className="mb-9">
-              <svg className="w-28 h-28 text-black block mx-auto" viewBox="0 0 104 83" xmlnsXlink="http://www.w3.org/1999/xlink">
+              {/* <svg className="w-28 h-28 text-black block mx-auto" viewBox="0 0 104 83" xmlnsXlink="http://www.w3.org/1999/xlink">
+              
                 <defs>
                   <path id="sadDog-a" d="M.116.67H103.86V49H.116z"></path>
                   <path id="sadDog-c" d="M.12.28h49.54v51.53H.12z"></path>
@@ -38,27 +42,28 @@ function Info() {
                     fill="currentColor"
                   ></path>
                 </g>
-              </svg>
+              </svg> */}
+              <img src={massage} className='"w-28 h-28 text-black block mx-auto' />
             </div>
 
-            <div className="text-2xl md:text-3xl lg:text-3xl font-extrabold text-center leading-4 mb-4">puppy socialising</div>
+            <div className="text-2xl md:text-2xl lg:text-2xl font-extrabold text-center leading-4 mb-4">therapeutic experience</div>
 
             <div className="text-center">
-              <p className="text-sm font-comfort font-light">We want to aid in the socialisation of puppies by giving them the best start in life and that’s where you come in. Our puppies get the chance to meet new friends and have fun while developing their social skills.</p>
+              <p className="text-sm font-comfort font-light">Bring out the best in your employees by relieving work pressures with a head massage. Our therapists carefully massage your pressure points on the scalp to relieve you of the tension. Get the most relaxing corporate head massages that rejuvenate you.</p>
             </div>
 
-            <div className="w-full text-center">
+            {/* <div className="w-full text-center">
               <a className=" std mx-auto relative std-green" href="https://www.pawsinwork.com/the-benefits" target="">
                 <span>learn more</span>
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
 
         <div className="w-full md:w-1/2 lg:w-1/3 flex flex-wrap px-8 pb-12 sm:pb-18 content-between">
           <div className="w-full">
             <div className="mb-9">
-              <svg className="w-28 h-28 text-black block mx-auto" viewBox="0 0 94 133" xmlnsXlink="http://www.w3.org/1999/xlink">
+              {/* <svg className="w-28 h-28 text-black block mx-auto" viewBox="0 0 94 133" xmlnsXlink="http://www.w3.org/1999/xlink">
                 <defs>
                   <path id="a" d="M.299.799h6.305v8.974H.299z"></path>
                   <path id="c" d="M.213.832h6.976v7.755H.213z"></path>
@@ -93,46 +98,48 @@ function Info() {
                     fill="currentColor"
                   ></path>
                 </g>
-              </svg>
+              </svg> */}
+              <img src={benefits} className='"w-28 h-28 text-black block mx-auto' />
             </div>
 
-            <div className="text-2xl md:text-3xl lg:text-3xl font-extrabold text-center leading-4 mb-4">employee wellbeing</div>
+            <div className="text-2xl md:text-2xl lg:text-2xl font-extrabold text-center leading-4 mb-4">employee well-being</div>
 
             <div className="text-center">
-              <p className="text-sm font-comfort font-light">We want to improve mental health in the workplace by giving staff the headspace to play, laugh and relax with some new best friends. We want to combat some of the stresses and isolation work life can have.</p>
+              <p className="text-sm font-comfort font-light">Our therapeutic massages make you look forward to coming back to work. We help you reduce fatigue, and encourage employee engagement to boost your work productivity. We help to rebalance your work-life to improve your in-office performance.</p>
             </div>
 
-            <div className="w-full text-center">
+            {/* <div className="w-full text-center">
               <a className=" std mx-auto relative std-blue" href="https://www.pawsinwork.com/puppy-therapy" target="">
                 <span>learn more</span>
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
 
         <div className="w-full md:w-1/2 lg:w-1/3 flex flex-wrap px-8 pb-12 sm:pb-18 content-between">
           <div className="w-full">
             <div className="mb-9">
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-28 h-28 text-black block mx-auto" viewBox="0 0 88 54">
+              {/* <svg xmlns="http://www.w3.org/2000/svg" className="w-28 h-28 text-black block mx-auto" viewBox="0 0 88 54">
                 <path
                   d="M78.458 2.114c-2.995-1.828-5.73-1.429-7.78-.877-3.176.858-5.394 2.207-6.775 4.125-1.809 2.506-2.613 5.538-2.103 7.913.048.22-.034.771-.311 1.201-.11.165-.29.378-.53.432-1.975.426-2.934.854-3.861 1.265-.893.397-1.735.772-3.555 1.166-1.87.405-2.79.533-3.769.671-.959.136-1.695.472-3.62.888-1.82.395-2.741.407-3.718.421-1.013.016-2.06.03-4.033.457-1.91.412-2.859.645-3.807.877-.937.23-2.13.262-4.013.67-1.931.417-2.894.719-3.823 1.013-.938.296-1.825.576-3.686.977-.307.068-.458-.012-.59-.152-.149-.162-.363-.514-.526-1.272-.519-2.4-2.222-4.912-4.944-6.745-1.562-1.054-4.762-2.547-8.06-1.934-2.604.484-5.18 2.106-7.065 4.45-2.042 2.536-1.472 5.94-.748 8.62.802 2.973 2.55 5.436 4.796 6.755.514.304.714.79.793 1.145.157.737-.036 1.609-.509 2.28-1.876 2.672-2.754 5.757-2.345 8.256.434 2.654 2.157 5.497 4.495 7.418 2.556 2.096 6.33 1.288 8.351.623 2.096-.694 4.1-2.276 6.136-4.85 1.438-1.82 2.075-3.755 2.075-5.843-.005-.02-.014-.042-.019-.062-.024-.096-.06-.19-.094-.28-.045-.02-.087-.045-.134-.063a.809.809 0 01-.348-.269c-.019-.007-.042-.007-.06-.014-.04-.015-.072-.04-.109-.057-.238.556-.424 1.134-.663 1.69-.14 1.465-.7 2.822-1.756 4.16-1.832 2.32-3.93 3.848-5.725 4.44-1.715.566-4.885 1.273-6.856-.344-2.054-1.688-3.602-4.533-3.978-6.824-.342-2.101.677-4.732 2.323-7.073.726-1.035 1.009-2.353.758-3.521-.205-.937-.749-1.709-1.536-2.17-1.893-1.115-3.649-3.128-4.345-5.704-.664-2.466-.86-5.354.725-7.324 1.631-2.026 3.92-3.477 6.126-3.887 2.749-.512 5.445.952 6.809 1.87 1.38.927 3.97 2.735 4.556 5.434.194.902.493 1.56.913 2.012.543.583 1.263.797 2.078.621 1.931-.417 2.705-.564 3.635-.858.938-.296 1.823-.577 3.683-.977 1.902-.413 2.852-.645 3.799-.877.938-.228 1.876-.46 3.765-.867 1.82-.394 2.743-.407 3.72-.421 1.013-.016 2.06-.031 4.033-.457a43.6 43.6 0 013.763-.67 47.199 47.199 0 003.883-.69c1.975-.428 2.934-.855 3.861-1.268.893-.396 1.735-.77 3.552-1.164.61-.13 1.138-.52 1.524-1.122.46-.714.678-1.697.528-2.386-.414-1.922.308-4.535 1.838-6.658 1.162-1.614 3.09-2.763 5.908-3.522 1.851-.501 4.079-.808 6.545.7 2.42 1.48 2.986 3.681 3.24 5.839.314 2.691.804 5.394-.44 7.16-.845 1.205-1.22 2.785-.954 4.02.183.833.642 1.488 1.329 1.892l.786.453c1.88 1.076 3.638 2.324 4.263 4.319.585 1.868-.356 3.848-2.18 6.638-1.616 2.469-3.097 3.641-5.103 4.05-2.247.455-5.084.817-7.106-.438-2.02-1.25-2.873-3.815-3.442-6.155-.508-2.116-2.486-2.887-4.088-2.54-2.009.434-2.96.956-3.884 1.457-.862.472-1.674.916-3.46 1.302-1.833.396-2.755.443-3.734.496-.996.052-2.025.106-3.985.53-1.886.407-2.835.588-3.784.768-.96.182-1.915.364-3.822.776-1.883.407-2.831.59-3.777.775-.96.185-1.916.37-3.825.784-1.942.419-2.903.75-3.833 1.068-.928.318-1.676.86-3.526 1.26a4.483 4.483 0 00-1.68.738c-.066.048-.116.109-.178.16.017.033.03.068.046.102.008.013.015.029.023.044l.006.01c.034.053.065.108.099.16.07.108.149.205.227.305l.09.068c.016.006.03.017.041.03.01.004.01.006.023.012.028.011.033.015.049.022.062.016.186.029.207.032.008.001.002.001.008.003h.004c.077-.006.153-.01.232-.02a1.41 1.41 0 00.098-.015l.02-.003a.425.425 0 00.06-.017c.27-.149.56-.271.83-.33 1.94-.42 2.902-.75 3.833-1.068.929-.318 1.804-.62 3.655-1.019 1.891-.41 2.84-.594 3.79-.778.956-.186 1.913-.37 3.81-.78 1.887-.409 2.837-.589 3.785-.768.96-.184 1.916-.366 3.823-.777 1.835-.398 2.758-.446 3.737-.498.994-.052 2.025-.105 3.982-.528 2.007-.435 2.96-.956 3.883-1.46.861-.47 1.823-1.119 3.609-1.505.722-.157 1.91.078 2.222 1.368.642 2.653 1.637 5.576 4.142 7.13 2.493 1.542 5.57 1.36 8.103.845a7.73 7.73 0 003.084-1.35c1.068-.78 2.044-1.88 3.025-3.384 1.665-2.544 3.218-5.256 2.366-7.971-.81-2.585-3.33-4.027-5.359-5.183l-.767-.445c-.306-.18-.499-.463-.586-.867-.173-.8.115-1.943.705-2.778 1.545-2.198 1.436-5.281 1.086-8.284-.286-2.432-.983-5.165-3.985-7.003"
                   fill="currentColor"
                   fillRule="evenodd"
                 ></path>
-              </svg>
+              </svg> */}
+              <img src={wellness} className='"w-28 h-28 text-black block mx-auto' />
             </div>
 
-            <div className="text-2xl md:text-3xl lg:text-3xl font-extrabold text-center leading-4 mb-4">ethical breeders</div>
+            <div className="text-2xl md:text-2xl lg:text-2xl font-extrabold text-center leading-4 mb-4">company well-being</div>
 
             <div className="text-center">
-              <p className="text-sm font-comfort font-light">We want to raise important awareness of the ethical breeding of dogs by sharing our knowledge and advice. By sharing what you’ll soon know, we can help to put a stop to unethical breeding and puppy farms.</p>
+              <p className="text-sm font-comfort font-light">With happy employees, employers can enjoy accelerated business growth. We provide in-office massages to employees to prevent employee burnout and higher turnover of staff. Boost the general mood and employee mental health at work.</p>
             </div>
 
-            <div className="w-full text-center">
+            {/* <div className="w-full text-center">
               <a className=" std mx-auto relative std-pink" href="https://www.pawsinwork.com/our-owners" target="">
                 <span>learn more</span>
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

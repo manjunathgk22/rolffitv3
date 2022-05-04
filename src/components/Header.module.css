@@ -13,7 +13,7 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .highlighbottom:before {
   background-image: url(/src/assets/images/line_green.svg);
@@ -28,4 +28,8 @@
   -webkit-transform: translateY(75%);
   transform: translateY(75%);
   width: 240px;
+}
+
+.whitesvg path {
+  fill: #fff;
 }

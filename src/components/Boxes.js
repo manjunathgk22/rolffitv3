@@ -4,11 +4,11 @@ function Boxes() {
   return (
     <div className="container m-auto">
       <div className="flex flex-wrap max-w-5xl mx-auto py-10 md:py-16 lg:py-21">
-        <div className="w-full lg:w-2/3">
+        <div className="w-full lg:w-2/4">
           <div className="px-3 py-3 h-full">
             <div className="bg-blue-200 h-full flex flex-wrap content-center px-3 py-8 lg:px-24 lg:py-24 relative">
               <div className="w-full text-center mb-6">
-                <div className="relative inline-block mx-auto text-white pr-12 text-[10rem]  font-bold" style={{ lineHeight: 0.972, letterSpacing: "-.163rem" }}>
+                {/* <div className="relative inline-block mx-auto text-white pr-12 text-[10rem]  font-bold" style={{ lineHeight: 0.972, letterSpacing: "-.163rem" }}>
                   60
                   <span className="h3 lg:h2  stat-percentage pl-5 text-[4rem] font-bold" style={{ verticalAlign: "75%" }}>
                     %
@@ -18,11 +18,12 @@ function Boxes() {
                     <path d="M261.5 340c-1.7 1.9-1.7 2.6-.6 8.8 5.4 28.6 6.1 33.9 6.1 49.4 0 14.8.1 15.7 2 16.3 3 1 5.7-.3 6.4-3 .3-1.3.6-5.7.5-9.7 0-4 .2-8.5.6-9.9.9-3.8-7.1-49.9-9.2-52.1-2.1-2.3-3.6-2.3-5.8.2zM259.7 163.9c-2.5.9-7.5 8.5-8.7 13.1l-1 3.8-6.3-1.5c-8.8-2-34.3-2.8-44.9-1.4-7.4 1-16.1 2.9-25.4 5.6-1.9.6-2.5-.2-5-6.7-3.4-8.9-5-11-8.3-10.6-4.2.5-6.6 6-6.5 14.3.1 3.8.4 7.9.5 9.1.3 1.7-1.7 3.7-9.9 9.8-5.7 4.2-10.5 8.3-10.9 9.2-.9 2.4 1.4 6.4 3.7 6.4 1.1 0 5.3-2.6 9.3-5.8 21-16.7 52.5-25.8 80.3-23.1 23.2 2.2 44.8 11.2 56.9 23.8 2.8 2.9 4.7 4.1 6.7 4.1 3.6 0 5.6-3.6 3.9-6.9-1.8-3.2-13.1-12.2-21-16.6-5.1-2.9-6.9-4.4-6.5-5.5 2.7-6.6 2-18.3-1.2-20.7-2-1.4-3-1.5-5.7-.4z"></path>
                     <path d="M205.7 201.7c-.4.6-3.5 1.3-6.9 1.7-23.1 2.3-48.1 13.1-60.7 25.9-3.5 3.7-4.2 5-3.7 7.1.9 3.5 4.2 4.3 7.5 1.7 14.7-12 24.5-17.3 39.5-21.6 12.6-3.6 13.1-3.5 10.1 1.7-1.5 2.5-2.5 5.9-2.5 8.2 0 3.3.7 4.5 3.9 7.7 5.6 5.3 12.1 7.2 23.1 6.7 9.8-.3 12.6-1.6 16.8-7.8 2.6-3.9 3.1-13.4.8-17.9l-1.5-2.8 7.7 1.3c15.8 2.8 29.4 8.2 41.3 16.6 6.3 4.5 8.9 4.6 10.4.4.9-2.6.6-3.1-3.5-6.7-6-5.2-22.5-13.3-33-16.3-13.1-3.7-48.1-7.9-49.3-5.9zM133 482.6c-5.9 5-9.1 14.7-7.2 21.6.8 3 .7 3.8-.5 4.2-1.9.8-16.2.7-19 0l-2.1-.6 2.4-4.5c2.9-5.5 3.1-11.6.5-15.9-4.1-6.7-13.5-7-17.9-.4-2.1 3.1-2.3 4.4-2 11.5l.3 8-4.5 2.2c-4.1 2.2-10.9 3.1-12.3 1.7-.3-.3.6-2.4 2-4.6 1.8-2.6 2.8-5.7 3.1-9.3.4-5 .2-5.7-2.6-8.5-4.3-4.2-9.8-4.2-14.6 0-4.4 3.9-6 8.7-5.2 15.6.5 4.6.4 5.5-1.3 6.4-2.9 1.5-10.8 1.2-14.2-.5l-2.9-1.6 4-3.8c5.2-4.9 5.5-9.7 1.1-14.2-2.5-2.4-3.8-2.9-7.9-2.9-4 0-5.4.5-7.5 2.6-1.5 1.4-2.9 4.1-3.3 6-.7 4-.9 4-5.2 1.4-4.1-2.5-7.2-7.5-7.2-11.7 0-5.7-7.2-5.8-8.4-.1-1.7 8.5 5.5 18.3 15.6 21.3 4.1 1.1 6.8 2.8 10 6 5.6 5.5 13.3 8 22.3 7.2 3.4-.3 7.4-1.1 8.8-1.8 2.2-1 3.8-.9 8.7.6 7.8 2.4 15.1 1.6 22.9-2.4l6-3 4.5 2c5.5 2.4 27.9 3.9 31.3 2.1 1.6-.9 2.9-.8 5.7.3 1.9.8 5.8 1.5 8.6 1.5s5.9.6 7 1.2c1.5 1 2.7 1 4.9.1 2.6-1 3.2-.8 5.3 1.4 4.4 4.8 9.9 6.5 21.1 6.4 5.6-.1 11.2-.1 12.5 0 1.3 0 4-1.2 6-2.8 5.5-4.3 5.7-4.4 9.6-2.8 4.9 2.1 13.6 1.9 19.8-.5l5.2-2 3.6 2.5c5.6 3.8 12.1 5 19.7 3.6l6.4-1.2 3.5 3c6.3 5.5 9.2 6.6 18.4 6.6 7.3 0 9.4-.4 14.7-2.9l6.3-2.9 4.9 2.2c6.1 2.6 16.9 2.8 23.8.5 2.6-.9 7.5-3.4 10.8-5.6 4.7-3.1 6.3-3.7 7.5-2.9 8.7 6.4 18.6 7.1 32.5 2.3 9.9-3.5 8.2-3.6 20.9 2.4 5.5 2.7 7.8 2.9 10.8 1.3 2.7-1.5 19.1-4.1 19.9-3.1.3.4 1.6 3.4 2.9 6.7 4.6 12.1 11.3 23.8 17.1 30 7.1 7.5 14.7 11.9 19.2 11.2 1.8-.3 9.3.2 16.9 1.1 14.8 1.8 29.9 1.1 60.3-2.5 22.4-2.7 74.7-2.4 102.6.5 37 3.8 53.8 2.7 67.2-4.5 14.3-7.8 24.2-25 27.8-48.1 1.1-7.5 1.4-8.1 4.3-9.3 4.6-2 4.7-6 .4-9.2-7.6-5.7-17.1-9.2-29.1-10.7-4.6-.6-19.1-3.3-32.2-6-13-2.8-24.8-5-26.2-5-1.3 0-4.6.7-7.3 1.6-5.5 1.8-7 4.2-4.7 7.7.8 1.2 1.7 4.7 2.1 7.7.4 3 1.9 8.8 3.3 12.9 1.4 4 2.1 7.7 1.6 8.1-1.7 1.6-64.4 6-86.4 6-19 0-50.7-3-59.1-5.6-2.3-.7-2.4-8.3-.3-14.4 2.2-6.3 2-9.8-.7-11-7.1-3-19.9-4.4-41.6-4.5-12.2-.1-22.5-.5-22.9-.8-1.4-1.4-3.8-.5-12.4 4.4-11.5 6.7-11.7 6.9-9.7 12.7 1 2.6 1.6 4.7 1.5 4.8-.1.1-5 .4-10.9.6l-10.7.5 2.5-4.2c3.2-5.5 3.4-15 .4-18.7-5.9-7.6-17.1-5.4-22 4.2-2.8 5.4-3.3 10.7-1.7 16.7l1.4 5.2-4.1 1.5c-12.5 4.7-20.3 5.3-25.4 2l-2.3-1.5 4-3.9c4.4-4.3 7.8-13.2 6.7-17.7-1.7-6.5-10-10-15.8-6.6-6 3.5-7.8 7.4-7.8 17.4 0 8.6-.1 8.8-3.1 11.4-7.1 5.9-16.5 8.9-23.7 7.6-2.3-.5-4.5-1.1-4.8-1.3-.2-.3 1.1-3.1 3.1-6.3 2.8-4.8 3.5-6.9 3.5-11.3 0-8.8-3.5-13.1-10.6-13.2-5 0-8.6 2.6-11.5 8.3-2.1 4-2.2 7.1-.7 19.7.3 2.2-.3 2.7-4.7 4.3-6.2 2.2-14.6 1.8-17.5-.8-2-1.8-2-1.8 1.9-6 6.5-7 7.8-16 3.2-21.7-4.2-5.1-15.6-1.4-19.6 6.2-.8 1.6-1.5 5.4-1.5 8.4v5.5l-3.7 1c-5.5 1.6-8.4 1.3-12.1-.9-2.8-1.7-3.1-2.3-2.2-3.9.5-1.1 1.5-2.3 2-2.6 1.9-1.2 5-8.4 5-11.5 0-2.2-.9-4.1-3-6.1-2.5-2.6-3.6-3-7.2-2.7-3.7.3-4.6.8-7.1 4.5-2.4 3.3-3.1 5.5-3.5 11.3-.4 6.5-.7 7.2-3.3 8.5-3 1.6-10.6 2-12.7.7-1-.7-.6-2.3 1.8-7.3 4.8-10.2 4-21.2-1.7-23.8-4.8-2.2-13.7 1.9-16.7 7.8-2.8 5.4-3 9.8-.6 17.2 2.5 7.7 1.9 9.4-2.6 8.3-1.2-.3-4.5.2-7.5 1-7.1 2.1-12.7 2-16.6-.4-3.7-2.2-4-3.2-1.6-5.1.9-.8 3.6-4 6-7.3 3.7-5 4.3-6.5 4.3-10.8 0-8.7-6.9-12.3-15.7-8.2-5.6 2.7-8.6 7.5-9.2 15.1-.6 6.5-.7 6.7-4.1 7.9-1.9.7-4.9 1.3-6.7 1.3l-3.2.1 3.2-5.1c2.6-4.3 3.2-6.4 3.5-12.5.4-6.7.2-7.5-2.1-9.8-3.5-3.5-8.5-3.5-12.7 0zm578.6 13.9c13.3 2.4 25.2 4.9 26.5 5.5 4 1.8-15.4.4-26.1-1.9-9.6-2-29-7.8-29-8.7 0-.2 1-.2 2.3.1 1.2.3 13.1 2.5 26.3 5zm-212.1 1.3l4 .7-9 2.7c-12.3 3.6-19.4 4.8-28.9 4.7-8.1 0-18.6-2.5-18.9-4.4-.7-4.1 35.9-6.6 52.8-3.7zm201.6 9.6c9.2 2.4 20.8 4 37.1 5.2l7.8.6-.6 4.1c-2 14.3-7.4 27.3-14.8 35.4-5.7 6.3-14.1 10.6-24.1 12.4-8.4 1.4-28.7.7-49.5-1.7-11-1.4-22.7-1.8-48.5-1.8-30.6-.1-36.6.2-60.5 2.8-32.6 3.5-46.1 3.3-61.5-.9-5.5-1.5-11.6-3-13.5-3.4-6.7-1.2-15.9-15.6-23.5-36.4-1.9-5.4-3.5-10.1-3.5-10.5 0-.4 4.2-.3 9.3.2 11.5 1.2 28.5-.4 41.8-3.8 5.2-1.4 10.1-2.7 11-3.1 1.4-.5 1.7.6 2.1 8.7.3 7.2 1 10.5 2.9 14.8 5.3 11.5 12.9 16.6 15.7 10.5 1-2.1.7-3-2.4-7.1-1.9-2.5-3.3-4.8-3.1-5 .2-.2 5.1.3 10.8 1.2 17.8 2.8 66.5 3 100.5.5 38.3-2.9 35.1-3.1 36 2.4.8 5.5 2.8 7.8 5.8 6.9 1.1-.3 2.5-1 3-1.5 2-1.8-3.4-25.5-9.1-40.6-.3-.6 4.4.8 10.4 3.2 5.9 2.4 15.1 5.5 20.4 6.9z"></path>
                   </svg>
-                </div>
+                </div> */}
+                <div className="text-6xl font-bold">Professional Therapists</div>
               </div>
-              <div className={`h6 sm:h5 md:h4 w-full text-center px-4 font-extrabold ${Styles.h4}`}>of employees experience poor mental health due to work.</div>
+              {/* <div className={`h6 sm:h5 md:h4 w-full text-center px-4 font-extrabold ${Styles.h4}`}>of employees experience poor mental health due to work.</div> */}
               <div className="w-full text-center px-4">
-                <p className={`${Styles.ptext} font-comfort`}>More than 1 in 5 admitted to calling in sick to avoid workplace stress - with 42% even considering resigning.</p>
+                <p className={`${Styles.ptext} font-comfort`}>We have handpicked certified therapists who have been trained through countless hours to expertise in massage therapies.</p>
               </div>
 
               <svg xmlns="http://www.w3.org/2000/svg" className="w-full h-full absolute left-0 top-0 text-white pointer-events-none" viewBox="0 0 674 593.16" preserveAspectRatio="none">
@@ -39,10 +40,11 @@ function Boxes() {
           </div>
         </div>
 
-        <div className="w-full lg:w-1/3">
+        <div className="w-full  lg:w-2/4">
           <div className="px-3 py-3">
-            <div className={`py-4 bg-red-200 px-14 relative font-comfort `}>
-              <p className={`${Styles.ptext}`}>On average a further 2 hours commute time, is added to a typical 9-5 working day. Meaning our time to 'switch off' is limited.</p>
+            <div className={` py-8 bg-red-200 px-14 relative font-comfort `}>
+              <div className={`h6 sm:h5 md:h4 w-full text-center px-4 font-extrabold ${Styles.h4}`}>Health and hygiene</div>
+              <p className={`${Styles.ptext}`}>Amidst the pandemic, it’s essential to ensure safety for our clients. Our therapists maintain a hygienic environment by following every protocol laid down.</p>
 
               <svg xmlns="http://www.w3.org/2000/svg" className="w-full h-full absolute left-0 bottom-0 text-white pointer-events-none" viewBox="0 0 331 227.75" preserveAspectRatio="none">
                 <g data-name="Layer 2">
@@ -54,7 +56,9 @@ function Boxes() {
 
           <div className="px-3 py-3">
             <div className="bg-green-200 py-12 px-10 relative">
-              <div className="w-full text-center mb-4">
+              <div className={`h6 sm:h5 md:h4 w-full text-center px-4 ${Styles.h4}`}>A holistic approach to health</div>
+              <p className={`${Styles.ptext}`}>We aid in improving the physical as well as mental health of the employee. Our corporate massages boost immunity and bust stress.</p>
+              {/* <div className="w-full text-center mb-4">
                 <div className="relative inline-block mx-auto text-[6rem] font-bold text-stat-md text-white pr-12">
                   34
                   <span className="h4 stat-percentage pl-3 text-[3rem]" style={{ verticalAlign: "75%" }}>
@@ -68,8 +72,8 @@ function Boxes() {
                     ></path>
                   </svg>
                 </div>
-              </div>
-              <div className="w-full text-center text-[1.5rem] leading-[1.5rem] font-bold mb-2">of employees feel they don’t have enough interaction with their colleagues</div>
+              </div> */}
+              {/* <div className="w-full text-center text-[1.5rem] leading-[1.5rem] font-bold mb-2">We aid in improving the physical as well as mental health of the employee. Our corporate massages boost immunity and bust stress.</div> */}
 
               <svg xmlns="http://www.w3.org/2000/svg" className="w-full h-full absolute bottom-0 left-0 text-white pointer-events-none" viewBox="0 0 333.04 329" preserveAspectRatio="none">
                 <g data-name="Layer 2">

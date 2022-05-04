@@ -3,7 +3,9 @@
 }
 
 .slick-dots .slick-active .dotText {
-  color: red;
+  /* color: red; */
+  font-weight: 800;
+  transition: all 0.1s;
 }
 .slider-progress {
   transition: background-color 0.5s;
@@ -37,9 +39,12 @@
 
 .slick-current .animate-left {
   /* animation: animateLeft 1s ease-out; */
+  flex: 1;
 }
 .slick-current .animate-right {
   /* animation: animateRight 1s ease-out; */
+  flex: 1;
+  margin-left: 2rem;
 }
 @keyframes animateLeft {
   from {
@@ -66,4 +71,52 @@
     opacity: 1;
     transform: translateX(0px);
   }
+}
+
+.wheatsvg path {
+  fill: #f9f1e4;
+}
+.clipTop:after {
+  content: "";
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: -1px;
+  padding-top: 0.81%;
+}
+
+.clipTop:after {
+  background-image: url(/src/assets/images/clip-top.svg);
+  border-top: 1px solid #fff;
+}
+
+.clipbottom:before {
+  background-image: url(/src/assets/images/block_clipping_hero.svg);
+  content: "";
+  width: 100%;
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  z-index: 20;
+  padding-top: 0.81%;
+}
+
+li.bullet {
+  font-family: comfortaa;
+  list-style: none;
+  position: relative;
+  padding: 0 0 10px 20px;
+}
+
+li.bullet::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
 }
