@@ -16,6 +16,7 @@ import Contact from "./components/Contact";
 import anime from "./assets/images/logo_animation_black.gif";
 import WhyWe from "./components/WhyWe";
 import WhyWeSlider from "./components/WhyWeSlider";
+import Stats from "./components/Stats";
 // const Header = lazy(() => "./components/Header");
 // const Mission = lazy(() => import("./components/Mission"));
 // const Info = lazy(() => import("./components/Info"));
@@ -41,29 +42,35 @@ function App() {
           <Header />
         </div>
         <main>
-          <section>
+          <section id="mission">
             <FadeInWhenVisible>
               <Mission />
             </FadeInWhenVisible>
           </section>
-          <section>
+
+          <section id="info">
             <FadeInWhenVisible>
               <Info />
             </FadeInWhenVisible>
           </section>
-          <section>
+          <section id="howitworks">
             <FadeInWhenVisible>
               <HowItWorks />
             </FadeInWhenVisible>
           </section>
-          <section>
+          <section id="whywedoit" style={{ background: "white" }}>
             <FadeInWhenVisible>
               <WhyWe />
             </FadeInWhenVisible>
           </section>
           <section>
+            <Stats />
+          </section>
+
+          <section style={{ background: "white" }}>
             <FadeInWhenVisible>
-              <WhyWeSlider />
+              <Boxes />
+              {/* <WhyWeSlider /> */}
             </FadeInWhenVisible>
           </section>
           {/* <section>
@@ -77,7 +84,7 @@ function App() {
                 <Accordion />
               </FadeInWhenVisible>
           </section> */}
-          <section>
+          <section id="contact">
             <FadeInWhenVisible>
               <Contact />
             </FadeInWhenVisible>

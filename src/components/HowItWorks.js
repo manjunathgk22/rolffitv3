@@ -4,7 +4,7 @@ import "./HowItWorks.css";
 import { motion } from "framer-motion";
 import tent from "../assets/images/tent.jpg";
 
-const dotsText = ["Quick setup", "Special Chair Therapy", "Expert therapists", "Authentic massage products"];
+const dotsText = ["quick setup", "special chair therapy", "expert therapists"];
 function HowItWorks() {
   const dotRef = useRef(null);
   const settings = {
@@ -17,7 +17,7 @@ function HowItWorks() {
     pauseOnHover: false,
     // fade: true,
     arrows: false,
-    autoplay: true,
+    // autoplay: true,
     slidesToScroll: 1,
     autoplaySpeed: 3000,
     animating: false,
@@ -52,7 +52,6 @@ function HowItWorks() {
     },
     beforeChange: (page) => {
       console.log("qqq", page);
-      debugger;
       if (window.innerWidth < 640) {
         const wrapper = dotRef.current.getElementsByClassName("slick-dots")[0];
         console.log("www", wrapper.srcollLeft, page);
@@ -83,7 +82,7 @@ function HowItWorks() {
                 </div>
               </div>
               <div className="content-container animate-right" style={{ flex: 1 }}>
-                <h3 className="text-2xl md:text-3xl lg:text-3xl font-bold mb-4">Quick setup</h3>
+                <h3 className="text-2xl md:text-3xl lg:text-3xl font-bold mb-4">quick setup</h3>
                 {/* <p>rolf.fit brings its setup to your office. The specially designed set-up takes a few minutes to install. It does not take up much of your space and ensures privacy for the employees during the massage.</p> */}
                 <li className="bullet">We will set up a specially designed space for the therapy to take place.</li>
                 <li className="bullet">Our therapist will be available at your office during working hours.</li>
@@ -108,7 +107,7 @@ function HowItWorks() {
                 </div>
               </div>
               <div className="content-container animate-right" style={{ flex: 1 }}>
-                <h3 className="text-2xl md:text-3xl lg:text-3xl font-bold mb-4">Special Chair Therapy</h3>
+                <h3 className="text-2xl md:text-3xl lg:text-3xl font-bold mb-4">special chair therapy</h3>
                 <li className="bullet">Seated head, neck, shoulder and back massage therapy</li>
                 <li className="bullet">Short therapy session of 10 to 30 minutes</li>
                 <li className="bullet">No clothing is removed and no oils are used</li>
@@ -130,7 +129,7 @@ function HowItWorks() {
                 </div>
               </div>
               <div className="content-container animate-right" style={{ flex: 1 }}>
-                <h3 className="text-2xl md:text-3xl lg:text-3xl font-bold mb-4">Expert therapists</h3>
+                <h3 className="text-2xl md:text-3xl lg:text-3xl font-bold mb-4">expert therapists</h3>
                 <li className="bullet">
                   We have a team of highly qualified therapists targeting pressure points for <strong>maximum relaxation</strong>.
                 </li>

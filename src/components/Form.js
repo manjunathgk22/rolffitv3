@@ -24,21 +24,24 @@ function Form() {
     let valid = true;
     if (!formData["name"]) {
       valid = false;
-      seterrors({
+      seterrors((errors) => ({
+        ...errors,
         name: "Cannot be empty",
-      });
+      }));
     }
     if (!formData["companyName"]) {
       valid = false;
-      seterrors({
+      seterrors((errors) => ({
+        ...errors,
         companyName: "Cannot be empty",
-      });
+      }));
     }
     if (!formData["email"]) {
       valid = false;
-      seterrors({
+      seterrors((errors) => ({
+        ...errors,
         email: "Cannot be empty",
-      });
+      }));
     }
     if (typeof formData["email"] !== "undefined") {
       let lastAtPos = formData["email"].lastIndexOf("@");
@@ -46,20 +49,23 @@ function Form() {
 
       if (!(lastAtPos < lastDotPos && lastAtPos > 0 && formData["email"].indexOf("@@") == -1 && lastDotPos > 2 && formData["email"].length - lastDotPos > 2)) {
         valid = false;
-        seterrors({
+        seterrors((errors) => ({
+          ...errors,
           email: "Email is not valid",
-        });
+        }));
       }
     }
     if (!formData["phoneNumber"]) {
       valid = false;
       seterrors({
+        ...errors,
         phoneNumber: "Cannot be empty",
       });
     }
     if (!formData["phoneNumber"].match(phoneRegex)) {
       valid = false;
       seterrors({
+        ...errors,
         phoneNumber: "Phone number is not valid",
       });
     }
@@ -95,7 +101,6 @@ function Form() {
         {submitted ? (
           <div className="w-full h-full flex justify-center items-center">
             <img ref={gif} src={congratsanime} alt="animation gif" />
-            <canvas />
           </div>
         ) : (
           <form class="">

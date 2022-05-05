@@ -70,6 +70,7 @@
   .slick-current .animate-left,
   .slick-current .animate-right {
     width: 100%;
+    max-width: calc(100% - 25px);
   }
 }
 @keyframes animateLeft {

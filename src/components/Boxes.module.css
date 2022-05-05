@@ -10,3 +10,11 @@
   letter-spacing: -0.072rem;
   line-height: 1.065;
 }
+
+:global(.boxes-container svg path) {
+  fill: white;
+}
+
+:global(.header-svg svg path) {
+  fill: #72717a;
+}
