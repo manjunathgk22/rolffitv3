@@ -11,8 +11,8 @@ function Header() {
   };
   return (
     <div style={{ height: "90vh" }} className={`flex items-center bg-[url('/src/assets/images/hero.jpeg')] bg-cover bg-no-repeat relative bg-bottom ${Styles.headerwrapper}`}>
-      <div className="z-10 absolute top-4 left-8 cursor-pointer">
-        <LogoSVG className={`h-auto cursor-pointer lg:w-40 md:w-36 w-32 ${Styles.whitesvg}`} />
+      <div className="z-10 absolute top-4 left-8 ">
+        <LogoSVG className={`h-auto lg:w-40 md:w-36 w-32 ${Styles.whitesvg}`} />
       </div>
       <div className={`font-bold md:text-6xl text-4xl md:max-w-[50%] w-3/4 text-white absolute lg:left-24 left-10 z-10`}>
         ready to make your employees happier and motivated?

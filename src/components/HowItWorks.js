@@ -17,7 +17,7 @@ function HowItWorks() {
     pauseOnHover: false,
     // fade: true,
     arrows: false,
-    // autoplay: true,
+    autoplay: true,
     slidesToScroll: 1,
     autoplaySpeed: 3000,
     animating: false,
@@ -84,12 +84,9 @@ function HowItWorks() {
               <div className="content-container animate-right" style={{ flex: 1 }}>
                 <h3 className="text-2xl md:text-3xl lg:text-3xl font-bold mb-4">quick setup</h3>
                 {/* <p>rolf.fit brings its setup to your office. The specially designed set-up takes a few minutes to install. It does not take up much of your space and ensures privacy for the employees during the massage.</p> */}
-                <li className="bullet">We will set up a specially designed space for the therapy to take place.</li>
-                <li className="bullet">Our therapist will be available at your office during working hours.</li>
-                <li className="bullet">Employees can opt for the service during their free time and will be charged there and then.</li>
-                <li className="bullet">
-                  You (Employer) will <strong>not be charged</strong> for any services.
-                </li>
+                <li className="bullet">We create a specially designed oasis of relaxation within a few minutes in the midst of your busy office environment.</li>
+                <li className="bullet">Our team ensures that you get absolute privacy and comfort on our on-site massage chairs.</li>
+                <li className="bullet">Our head massages can be customised to cater your needs ranging from 10 to 30 mins.</li>
               </div>
             </div>
           </div>
@@ -108,10 +105,9 @@ function HowItWorks() {
               </div>
               <div className="content-container animate-right" style={{ flex: 1 }}>
                 <h3 className="text-2xl md:text-3xl lg:text-3xl font-bold mb-4">special chair therapy</h3>
-                <li className="bullet">Seated head, neck, shoulder and back massage therapy</li>
-                <li className="bullet">Short therapy session of 10 to 30 minutes</li>
-                <li className="bullet">No clothing is removed and no oils are used</li>
-                <li className="bullet">Each massage is concluded with a re-energising facial spritz</li>
+                <li className="bullet">Our masseuses are professionally trained to give you seated head, neck shoulder and back massages that instantly lift your spirits and give you a boost of energy.</li>
+                <li className="bullet">No clothing is removed or oils are used.</li>
+                <li className="bullet">Each massage is concluded with a re-energising facial spritz.</li>
               </div>
             </div>
           </div>
@@ -130,12 +126,9 @@ function HowItWorks() {
               </div>
               <div className="content-container animate-right" style={{ flex: 1 }}>
                 <h3 className="text-2xl md:text-3xl lg:text-3xl font-bold mb-4">expert therapists</h3>
-                <li className="bullet">
-                  We have a team of highly qualified therapists targeting pressure points for <strong>maximum relaxation</strong>.
-                </li>
-                <li className="bullet">Professional Attired</li>
-                <li className="bullet">Trained and accredited</li>
-                <li className="bullet">Follow strict hygiene processes</li>
+                <li className="bullet">All our masseuses are professionally trained and accredited to provide you with the best services.</li>
+                <li className="bullet">Our therapists work on your pressure points for maximum relaxation.</li>
+                <li className="bullet">Our team is dressed professionally and follow strict hygiene protocols.</li>
               </div>
             </div>
           </div>
