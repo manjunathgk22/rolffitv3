@@ -36,7 +36,7 @@
 }
 
 .slick-dots .slick-active .progress {
-  animation: progressanimate 3.4s ease-out forwards;
+  animation: progressanimate 30.4s ease-out forwards;
 }
 .progress {
   width: 0;

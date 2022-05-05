@@ -6,7 +6,7 @@ import benefits from "../assets/images/Employee.svg";
 function Info() {
   return (
     <div className="w-full border-t border-grey-alto">
-      <div className="container-lg m-auto pb-16 py-14 lg:py-25 lg:w-4/5 w-11/12 relative z-10 flex flex-wrap-reverse lg:flex-wrap">
+      <div className="container-lg m-auto pb-16 py-14 lg:py-25 lg:w-4/5 w-11/12 relative z-10 flex flex-wrap lg:flex-wrap">
         <div className="w-full md:w-1/2 lg:w-1/3 flex flex-wrap px-8 pb-12 sm:pb-18 content-between">
           <div className="w-full">
             <div className="mb-9">

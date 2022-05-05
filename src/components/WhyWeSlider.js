@@ -20,7 +20,7 @@ function WhyWeSlider() {
     arrows: false,
     autoplay: true,
     slidesToScroll: 1,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 30000,
     animating: false,
     appendDots: (dots) => {
       console.log("dots", dots);

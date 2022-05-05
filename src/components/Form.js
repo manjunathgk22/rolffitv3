@@ -62,13 +62,13 @@ function Form() {
         phoneNumber: "Cannot be empty",
       });
     }
-    if (!formData["phoneNumber"].match(phoneRegex)) {
-      valid = false;
-      seterrors({
-        ...errors,
-        phoneNumber: "Phone number is not valid",
-      });
-    }
+    // if (!formData["phoneNumber"].match(phoneRegex)) {
+    //   valid = false;
+    //   seterrors({
+    //     ...errors,
+    //     phoneNumber: "Phone number is not valid",
+    //   });
+    // }
     return valid;
   };
 
@@ -124,7 +124,7 @@ function Form() {
                 <span className="text-sm text-rose-500">{errors.phoneNumber}</span>
               </div>
               <button onClick={handleSubmit} class="mx-3 hover:font-bold transition-all text-lg w-full mt-4 border-white  border-4 text-white py-1 rounded" type="button">
-                Submit
+                Request callback
               </button>
             </div>
           </form>
