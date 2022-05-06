@@ -37,7 +37,7 @@ function App() {
     </div>
   ) : (
     <FadeInWhenVisible>
-      <div className="overflow-visible ">
+      <div className="overflow-visible " id="home">
         <div style={{ height: "100vh" }}>
           <Header />
         </div>
@@ -67,7 +67,7 @@ function App() {
             <Stats />
           </section>
 
-          <section style={{ background: "white" }}>
+          <section style={{ background: "white" }} id="benefits">
             <FadeInWhenVisible>
               <Boxes />
               {/* <WhyWeSlider /> */}
@@ -79,11 +79,11 @@ function App() {
             </FadeInWhenVisible>
           </section> */}
 
-          {/* <section>
-              <FadeInWhenVisible>
-                <Accordion />
-              </FadeInWhenVisible>
-          </section> */}
+          <section id="faq">
+            <FadeInWhenVisible>
+              <Accordion />
+            </FadeInWhenVisible>
+          </section>
           <section id="contact">
             <FadeInWhenVisible>
               <Contact />

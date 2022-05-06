@@ -2,6 +2,7 @@ import React from "react";
 import HeaderImg from "../assets/images/Hero-Image-Raw.jpg";
 import Styles from "./Header.module.css";
 import { ReactComponent as LogoSVG } from "../assets/images/logo_rolf_logo.svg";
+import Nav from "./Nav";
 function Header() {
   const scrolltoHowItWorks = () => {
     document.getElementById("howitworks")?.scrollIntoView({ block: "end", behavior: "smooth" });
@@ -11,8 +12,9 @@ function Header() {
   };
   return (
     <div style={{ height: "90vh" }} className={`flex items-center bg-[url('/src/assets/images/hero.jpeg')] bg-cover bg-no-repeat relative bg-bottom ${Styles.headerwrapper}`}>
-      <div className="z-10 absolute top-4 left-8 ">
-        <LogoSVG className={`h-auto lg:w-40 md:w-36 w-32 ${Styles.whitesvg}`} />
+      <div className="z-100 absolute top-4 left-8 w-[calc(100%-4rem)] flex">
+        {/* <LogoSVG className={`h-auto lg:w-40 md:w-36 w-32 ${Styles.whitesvg}`} /> */}
+        <Nav />
       </div>
       <div className={`font-bold md:text-6xl text-4xl md:max-w-[50%] w-3/4 text-white absolute lg:left-24 left-10 z-10`}>
         ready to make your employees happier and motivated?
