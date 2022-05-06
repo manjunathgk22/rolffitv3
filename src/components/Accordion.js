@@ -17,7 +17,7 @@ import { AiOutlineDown, AiOutlineUp } from "react-icons/ai";
 export default function Accordion() {
   return (
     <AnimateSharedLayout>
-      <div className="container m-auto">
+      <div className="px-3 container m-auto">
         <div className="flex flex-wrap max-w-5xl mx-auto py-10 md:py-16 lg:py-21 justify-center">
           <div class="h5 sm:h4 md:h3 text-6xl font-bold mb-8 text-center">FAQs</div>
           <motion.ul className={`${Styles.ul}`} layout initial={{ borderRadius: 25 }}>
