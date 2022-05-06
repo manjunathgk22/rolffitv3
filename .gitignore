@@ -27,4 +27,4 @@ yarn.lock
 
 .idea/
 
-deploy-to-aws.sh
+# deploy-to-aws.sh
