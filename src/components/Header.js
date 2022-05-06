@@ -5,7 +5,7 @@ import { ReactComponent as LogoSVG } from "../assets/images/logo_rolf_logo.svg";
 import Nav from "./Nav";
 function Header() {
   const scrolltoHowItWorks = () => {
-    document.getElementById("howitworks")?.scrollIntoView({ block: "end", behavior: "smooth" });
+    document.getElementById("howitworks")?.scrollIntoView({ block: "start", behavior: "smooth" });
   };
   const scrollToDemo = () => {
     document.getElementById("contact")?.scrollIntoView({ block: "end", behavior: "smooth" });
