@@ -1,6 +1,4 @@
 rm -r build/
-rm -f package-lock.json
-rm -f yarn.lock
 
 npm install
 
