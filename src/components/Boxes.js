@@ -8,8 +8,8 @@ const data = [
 function Boxes() {
   return (
     <div className="container m-auto boxes-container">
-      <div className="px-3 py-3 text-4xl max-w-5xl mx-auto lg:text-6xl mb-0 font-bold">we help you build a hands-on approach to lifting the spirits and goodwill of your employees</div>
-      <div className="flex gap-[20px] flex-wrap max-w-5xl mx-auto py-8 md:py-12">
+      <div className="px-4 py-3 text-4xl max-w-5xl mx-auto lg:text-6xl mb-0 font-bold">we help you build a hands-on approach to lifting the spirits and goodwill of your employees</div>
+      <div className="flex gap-[20px] px-4 flex-wrap max-w-5xl mx-auto py-8 md:py-12">
         <div className="px-3 py-3 relative basis-full md:basis-[calc(33%-20px)] rounded overflow-hidden flex">
           <div className={`w-full px-8 bg-[#f9f1e4] py-6 items-center justify-center red-200 relative`}>
             {/* <div className="text-lg font-bold text-center">Relief from physical fatigue</div> */}

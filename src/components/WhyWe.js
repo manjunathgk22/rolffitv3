@@ -2,7 +2,7 @@ import React from "react";
 
 function WhyWe() {
   return (
-    <div class="container m-auto mt-4">
+    <div class="container m-auto mt-4 px-3 lg:px-0">
       <div class="mx-auto max-w-3xl text-center pt-10 md:pt-16 lg:pt-21">
         <div class="h5 sm:h4 md:h3 text-6xl font-bold text-center mb-8">why we do it?</div>
 
