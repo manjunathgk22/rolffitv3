@@ -44,7 +44,7 @@ function App() {
   };
   const handleScroll = (event) => {
     let scrollTop = window.pageYOffset;
-    if (scrollTop > 7050) {
+    if (scrollTop > 7150) {
       // contact.current.style.height = "0px";
       contact.current.style.opacity = 0;
     } else {
