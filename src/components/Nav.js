@@ -46,7 +46,7 @@ export default function Header() {
         </div>
         <AnimatePresence>
           {isNavOpen ? (
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className={`${isNavOpen ? "showMenuNav" : "hideMenuNav"} z-20`}>
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className={`${isNavOpen ? "showMenuNav" : "hideMenuNav"} z-50`}>
               {" "}
               <div
                 className="CROSS-ICON flex self-end justify-end top-0 right-0 px-8 py-8"

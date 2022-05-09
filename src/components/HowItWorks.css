@@ -65,12 +65,13 @@
   /* animation: animateRight 1s ease-out; */
   flex: 1;
   margin-left: 2rem;
+  max-width: fit-content;
 }
 @media screen and (max-width: 768px) {
   .slick-current .animate-left,
   .slick-current .animate-right {
     width: 100%;
-    max-width: calc(100% - 0px);
+    /* max-width: calc(100% - 0px); */
   }
 }
 @keyframes animateLeft {
