@@ -20,7 +20,7 @@ function Stats() {
                   </svg> */}
                 </div>
               </div>
-              <div className={`h6 sm:h5 md:h4 w-full text-center px-4 font-extrabold ${Styles.h4}`}>of employees report neck pain and 13% report headache during working hours</div>
+              <div className={`h6 sm:h5 md:h4 w-full text-center px-4 font-extrabold text-2xl lg:text-4xl`}>of employees report neck pain and 13% report headache during working hours</div>
               <div className="w-full text-center px-4">{/* <p className={`${Styles.ptext} font-comfort`}>at the end of the day resulting in workplace stress and productivity loss.</p> */}</div>
 
               <svg xmlns="http://www.w3.org/2000/svg" className="w-full h-full absolute left-0 top-0 text-white pointer-events-none" viewBox="0 0 674 593.16" preserveAspectRatio="none">
@@ -67,7 +67,7 @@ function Stats() {
                   </svg> */}
                 </div>
               </div>
-              <div className="w-full text-center text-[1.5rem] leading-[1.5rem] font-bold mb-2">is lost by businesses around the world as a result of workplace stress.</div>
+              <div className="w-full text-center text-2xl lg:text-4xl leading-[1.5rem] font-bold mb-2">is lost by businesses around the world as a result of workplace stress.</div>
 
               <svg xmlns="http://www.w3.org/2000/svg" className="w-full h-full absolute bottom-0 left-0 text-white pointer-events-none" viewBox="0 0 333.04 329" preserveAspectRatio="none">
                 <g data-name="Layer 2">
