@@ -1,7 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react"; // import state
-import { ReactComponent as LogoSVG } from "../assets/images/logo_rolf_logo.svg";
+// import { ReactComponent as LogoSVG } from "../assets/images/logo_rolf_logo.svg";
+import logo from "../assets/images/logo_rolf_logo.svg";
 import Styles from "./Header.module.css";
 
 export default function Header() {
@@ -33,7 +34,7 @@ export default function Header() {
   return (
     <div className=" z-20 flex items-center justify-between grow py-8 lg:justify-center lg:items-center">
       <a href="/">
-        <LogoSVG className={`h-auto lg:w-40 md:w-36 w-32 -mt-8 lg:mt-0 ${Styles.whitesvg}`} />
+        <img src={logo} className={`h-auto lg:w-40 md:w-36 w-32 -mt-8 lg:mt-0 ${Styles.whitesvg}`} />
       </a>
       <section className="MOBILE-MENU flex lg:hidden">
         <div
