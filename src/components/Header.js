@@ -23,7 +23,7 @@ function Header() {
           <button onClick={scrolltoHowItWorks} class="mx-3 hover:font-bold transition-all text-sm sm:text-lg lg:w-fit px-8 w-full mt-4 border-black  border-2 bg-black text-white py-2 rounded font-geomanist ml-0" type="button">
             How it works
           </button>
-          <button onClick={scrollToDemo} class="mx-3 hover:font-bold transition-all text-sm sm:text-lg lg:w-fit px-8 w-full mt-4 border-white  border-2  bg-white  text-black  py-2 rounded font-geomanist" type="button">
+          <button onClick={scrollToDemo} class="mx-3 hover:font-bold transition-all text-sm sm:text-lg lg:w-fit px-8 w-full mt-4 border-white  border-2  bg-white  text-black  py-2 rounded font-geomanist ml-0" type="button">
             Get FREE demo
           </button>
         </div>
