@@ -8,7 +8,7 @@ function Header() {
     document.getElementById("howitworks")?.scrollIntoView({ block: "start", behavior: "smooth" });
   };
   const scrollToDemo = () => {
-    document.getElementById("contact")?.scrollIntoView({ block: "end", behavior: "smooth" });
+    document.getElementById("contact")?.scrollIntoView({ block: "start", behavior: "smooth" });
   };
   return (
     <div style={{ height: "90vh" }} className={` flex max-h-[615px] mb-8 lg:mb-16 lg:max-h-[90vh] items-center bg-[url('/src/assets/images/hero.jpeg')] bg-cover bg-no-repeat relative bg-bottom ${Styles.headerwrapper}`}>

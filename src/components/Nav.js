@@ -16,7 +16,7 @@ export default function Header() {
     setIsNavOpen(false);
   };
   const gotocontact = () => {
-    document.getElementById("contact")?.scrollIntoView({ block: "end", behavior: "smooth" });
+    document.getElementById("contact")?.scrollIntoView({ block: "start", behavior: "smooth" });
     setIsNavOpen(false);
   };
   const gotofaq = () => {
