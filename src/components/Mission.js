@@ -7,7 +7,7 @@ function Mission() {
   return (
     <div className="container-lg m-auto pb-16 pt-4 md:py-18 lg:py-25 lg:w-4/5 w-11/12 relative z-10 flex flex-wrap-reverse lg:flex-wrap">
       <div className="w-full md:w-1/2 xl:w-2/5 md:pt-4 md:pr-7 lg:pr-12 xl:pr-17">
-        <h2 className="text-3xl md:text-4xl lg:text-7xl font-extrabold text-center md:text-left">our mission is simple...</h2>
+        <h2 className=" lg:text-7xl text-4xl font-extrabold text-center md:text-left">our mission is simple...</h2>
 
         <div className="text-sm font-comfort font-light md:text-lg pb-4 mt-12 text-center md:text-left">
           <p className="larger-normal-text">
