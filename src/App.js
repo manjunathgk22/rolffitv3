@@ -44,14 +44,14 @@ function App() {
   };
   const handleScroll = (event) => {
     let scrollTop = window.pageYOffset;
-    if (scrollTop > 7300) {
+    if (scrollTop > 7300 || scrollTop < 150) {
       // contact.current.style.height = "0px";
       contact.current.style.opacity = 0;
     } else {
       // contact.current.style.height = "auto";
       contact.current.style.opacity = 1;
     }
-    if (scrollTop > 4742) {
+    if (scrollTop > 4742 || scrollTop < 150) {
       // contactlg.current.style.height = "0px";
       contactlg.current.style.opacity = 0;
     } else {
