@@ -34,7 +34,7 @@ function HowItWorks() {
           }}
         >
           {dots?.map((item) => (
-            <div className="dotWrapper flex whitespace-nowrap w-5/6 md:w-auto min-w-[83%] md:min-w-[auto]">{item}</div>
+            <div className="dotWrapper flex whitespace-nowrap w-5/6 md:w-auto min-w-[83%] md:min-w-[auto] font-geomanist">{item}</div>
           ))}
         </div>
       );
@@ -69,7 +69,7 @@ function HowItWorks() {
   return (
     <div style={{ backgroundColor: "#f9f1e4" }} className={`relative py-8 clipTop clipbottom`}>
       <div ref={dotRef} className="max-w-6xl container m-auto p-4 lg:py-16">
-        <div className="font-geomanist h5 sm:h4 md:h3 lg:text-6xl text-4xl font-bold text-center mb-8">how it works</div>
+        <div className="font-geomanist h5 sm:h4 md:h3 lg:text-6xl text-4xl font-bold text-center mb-8">how it works?</div>
         <Slider {...settings}>
           <div>
             <div style={{}} className="mb-8 flex-col justify-center items-center md:flex md:flex-row">
@@ -84,7 +84,7 @@ function HowItWorks() {
                 </div>
               </div>
               <div className="content-container animate-right" style={{ flex: 1 }}>
-                <h3 className="text-2xl md:text-3xl lg:text-3xl font-bold mb-4">quick setup</h3>
+                <h3 className="text-2xl md:text-3xl lg:text-3xl font-bold mb-4 font-geomanist">quick setup</h3>
                 {/* <p>rolf.fit brings its setup to your office. The specially designed set-up takes a few minutes to install. It does not take up much of your space and ensures privacy for the employees during the massage.</p> */}
                 <li className="bullet">We create a specially designed oasis of relaxation within a few minutes in the midst of your busy office environment.</li>
                 <li className="bullet">Our team ensures that you get absolute privacy and comfort on our on-site massage chairs.</li>
@@ -106,7 +106,7 @@ function HowItWorks() {
                 </div>
               </div>
               <div className="content-container animate-right" style={{ flex: 1 }}>
-                <h3 className="text-2xl md:text-3xl lg:text-3xl font-bold mb-4">special chair therapy</h3>
+                <h3 className="text-2xl md:text-3xl lg:text-3xl font-bold mb-4 font-geomanist">special chair therapy</h3>
                 <li className="bullet">Our masseuses are professionally trained to give you seated head, neck shoulder and back massages that instantly lift your spirits and give you a boost of energy.</li>
                 <li className="bullet">No clothing is removed or oils are used.</li>
                 <li className="bullet">Each massage is concluded with a re-energising facial spritz.</li>
@@ -127,7 +127,7 @@ function HowItWorks() {
                 </div>
               </div>
               <div className="content-container animate-right" style={{ flex: 1 }}>
-                <h3 className="text-2xl md:text-3xl lg:text-3xl font-bold mb-4">expert therapists</h3>
+                <h3 className="text-2xl md:text-3xl lg:text-3xl font-bold mb-4 font-geomanist">expert therapists</h3>
                 <li className="bullet">All our masseuses are professionally trained and accredited to provide you with the best services.</li>
                 <li className="bullet">Our therapists work on your pressure points for maximum relaxation.</li>
                 <li className="bullet">Our team is dressed professionally and follow strict hygiene protocols.</li>
@@ -140,7 +140,7 @@ function HowItWorks() {
               <img className="image lg:h-96 md:h-80 h-44" style={{ width: "100%", boxSizing: "border-box", padding: "2rem", margin: "0" }} src="https://www.plan.london/wp-content/uploads/2021/11/Icons-Final-17.png" data-src="https://www.plan.london/wp-content/uploads/2021/11/Icons-Final-17.png" alt="" height="2197" width="2813" data-mobile-image="https://www.plan.london/wp-content/uploads/2021/11/Icons-Final-17.png" data-mobile-image-width="1024" data-mobile-image-height="800" />{" "}
             </div>
             <div className="content-container animate-right" style={{ flex: 1 }}>
-              <h3 className="text-2xl md:text-3xl lg:text-3xl font-bold mb-4">Authentic massage products</h3>
+              <h3 className="text-2xl md:text-3xl lg:text-3xl font-bold mb-4 font-geomanist">Authentic massage products</h3>
               <p>Every product used in massage therapies is of premium quality. It undergoes a thorough quality check.</p>
             </div>
           </div>
