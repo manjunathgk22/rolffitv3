@@ -106,24 +106,24 @@ function Form() {
           <form class="">
             <div class="flex flex-wrap -mx-3">
               <div class="w-full px-3 mb-6 ">
-                <input value={formData.name} onChange={({ target }) => setValue({ target, key: "name" })} class="appearance-none rounded block w-full bg-white text-gray-700 borderrounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Name" />
+                <input value={formData.name} onChange={({ target }) => setValue({ target, key: "name" })} class="font-comfort appearance-none rounded block w-full bg-white text-gray-700 borderrounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Name" />
                 <span className="text-sm text-rose-500">{errors.name}</span>
                 {/* <p class="text-red-500 text-xs italic">Please fill out this field.</p> */}
               </div>
               <div class="w-full px-3 mb-6 ">
-                <input value={formData.companyName} onChange={({ target }) => setValue({ target, key: "companyName" })} class="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Company name" />
+                <input value={formData.companyName} onChange={({ target }) => setValue({ target, key: "companyName" })} class="font-comfort appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Company name" />
                 <span className="text-sm text-rose-500">{errors.companyName}</span>
               </div>
 
               <div class="w-full px-3 mb-6 ">
-                <input value={formData.email} onChange={({ target }) => setValue({ target, key: "email" })} class="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Email id" />
+                <input value={formData.email} onChange={({ target }) => setValue({ target, key: "email" })} class="font-comfort appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Email id" />
                 <span className="text-sm text-rose-500">{errors.email}</span>
               </div>
               <div class="w-full px-3 mb-6 ">
-                <input value={formData.phoneNumber} onChange={({ target }) => setValue({ target, key: "phoneNumber" })} class="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="tel" placeholder="Phone number" />
+                <input value={formData.phoneNumber} onChange={({ target }) => setValue({ target, key: "phoneNumber" })} class="font-comfort appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="tel" placeholder="Phone number" />
                 <span className="text-sm text-rose-500">{errors.phoneNumber}</span>
               </div>
-              <button onClick={handleSubmit} class="mx-3 hover:font-bold transition-all text-lg w-full mt-4 border-white  border-4 text-white py-1 rounded" type="button">
+              <button onClick={handleSubmit} class="mx-3 hover:font-bold transition-all text-sm sm:text-lg  px-8 w-full mt-4 border-white  border-2  bg-white  text-black  py-2 rounded font-geomanist" type="button">
                 Request callback
               </button>
             </div>

@@ -39,7 +39,7 @@ function Item({ item }) {
   return (
     <motion.li className={`${Styles.li} border-b last:border-0 border-grey-alto mb-2 ${isOpen ? "bg-gray-100" : ""}`} onClick={toggleOpen} initial={{ borderRadius: 10 }}>
       {/* <motion.div className="avatar" layout /> */}
-      <div className="flex justify-between items-center">
+      <div className="font-comfort flex justify-between items-center">
         <span className="text-xl">{item.title}</span>
         {isOpen ? <AiOutlineUp /> : <AiOutlineDown />}
       </div>
