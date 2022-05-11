@@ -8,7 +8,7 @@ function Stats() {
           <div className="px-3 py-3 h-full">
             <div className="bg-blue-150 h-full flex flex-wrap content-center px-3 py-8 lg:px-24 lg:py-24 relative">
               <div className="w-full text-center mb-2">
-                <div className="relative inline-block mx-auto text-white pr-12 text-[10rem]  font-bold" style={{ lineHeight: 0.972, letterSpacing: "-.163rem" }}>
+                <div className="relative inline-block mx-auto text-white pr-12  text-6xl lg:text-[10rem]  font-bold" style={{ lineHeight: 0.972, letterSpacing: "-.163rem" }}>
                   62
                   <span className="h3 lg:h2  stat-percentage pl-5 text-[4rem] font-bold" style={{ verticalAlign: "75%" }}>
                     %
