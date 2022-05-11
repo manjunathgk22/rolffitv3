@@ -20,10 +20,10 @@ function Header() {
         ready to make your employees happier and motivated?
         <div className=" text-2xl md:mt-8 mt-4 font-light">boost business productivity with mini-massage breaks on office premises.</div>
         <div className="flex-col flex sm:flex-row gap-2 mt-6">
-          <button onClick={scrolltoHowItWorks} class="mx-3 hover:font-bold transition-all text-sm sm:text-lg w-full mt-4 border-black  border-2 bg-black text-white py-1 rounded" type="button">
+          <button onClick={scrolltoHowItWorks} class="mx-3 hover:font-bold transition-all text-sm sm:text-lg lg:w-fit px-8 w-full mt-4 border-black  border-2 bg-black text-white py-1 rounded" type="button">
             How it works
           </button>
-          <button onClick={scrollToDemo} class="mx-3 hover:font-bold transition-all text-sm sm:text-lg w-full mt-4 border-white  border-2  bg-white  text-black  py-1 rounded" type="button">
+          <button onClick={scrollToDemo} class="mx-3 hover:font-bold transition-all text-sm sm:text-lg lg:w-fit px-8 w-full mt-4 border-white  border-2  bg-white  text-black  py-1 rounded" type="button">
             Get free demo
           </button>
         </div>

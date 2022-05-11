@@ -4,7 +4,20 @@ module.exports = {
     fontFamily: {
       comfort: ["Comfortaa"],
     },
-    extend: {},
+
+    extend: {
+      colors: {
+        blue: {
+          150: "#b7cfed",
+        },
+        pink: {
+          150: "#efabab",
+        },
+        green: {
+          150: "#8cede4",
+        },
+      },
+    },
   },
   plugins: [],
 };

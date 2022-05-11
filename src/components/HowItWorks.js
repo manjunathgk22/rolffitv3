@@ -50,15 +50,17 @@ function HowItWorks() {
         </div>
       );
     },
-    beforeChange: (page) => {
-      console.log("qqq", page);
+    beforeChange: (current, next) => {
+      console.log("www", current, next);
+
       if (window.innerWidth < 640) {
         const wrapper = dotRef.current.getElementsByClassName("slick-dots")[0];
-        console.log("www", wrapper.srcollLeft, page);
-        if (wrapper) wrapper.scrollLeft = wrapper.getElementsByTagName("li")[0]?.clientWidth * ((page + 1) % 3);
+        if (wrapper) wrapper.scrollLeft = wrapper.getElementsByTagName("li")[0]?.clientWidth * (next % 3);
       }
     },
-    afterChange: (...page) => {},
+    afterChange: (...page) => {
+      console.log("qqq", page);
+    },
   };
   const variants = {
     visible: { opacity: 1, background: "red" },

@@ -76,7 +76,7 @@ function WhyWeSlider() {
               <div className="flex flex-wrap max-w-5xl mx-auto py-10 md:py-16 lg:py-21">
                 <div className="w-full lg:w-2/3">
                   <div className="px-3 py-3 h-full">
-                    <div className="bg-blue-200 border-0 h-full flex flex-wrap content-center px-3 py-8 lg:px-24 lg:py-24 relative">
+                    <div className="bg-blue-150 border-0 h-full flex flex-wrap content-center px-3 py-8 lg:px-24 lg:py-24 relative">
                       <div className="w-full text-center mb-2">
                         <div className="relative inline-block mx-auto text-white pr-12 text-[10rem]  font-bold" style={{ lineHeight: 0.972, letterSpacing: "-.163rem" }}>
                           60
@@ -111,7 +111,7 @@ function WhyWeSlider() {
 
                 <div className="w-full lg:w-1/3">
                   <div className="px-3 py-3">
-                    <div className={`py-4 bg-red-200 px-14 relative font-comfort `}>
+                    <div className={`py-4 bg-pink-150 px-14 relative font-comfort `}>
                       <p className={`${Styles.ptext}`}>On average a further 2 hours commute time, is added to a typical 9-5 working day. Meaning our time to 'switch off' is limited.</p>
 
                       <svg xmlns="http://www.w3.org/2000/svg" className="w-full h-full absolute left-0 bottom-0 text-white pointer-events-none" viewBox="0 0 331 227.75" preserveAspectRatio="none">
@@ -123,7 +123,7 @@ function WhyWeSlider() {
                   </div>
 
                   <div className="px-3 py-3">
-                    <div className="bg-green-200 py-12 px-10 relative">
+                    <div className="bg-green-150 py-12 px-10 relative">
                       <div className="w-full text-center">
                         <div className="relative inline-block mx-auto text-[6rem] font-bold text-stat-md text-white pr-12">
                           34
@@ -157,7 +157,7 @@ function WhyWeSlider() {
               <div className="flex flex-wrap max-w-5xl mx-auto py-10 md:py-16 lg:py-21">
                 <div className="w-full lg:w-2/3">
                   <div className="px-3 py-3 h-full">
-                    <div className="bg-blue-200 border-0 h-full flex flex-wrap content-center px-3 py-8 lg:px-24 lg:py-24 relative">
+                    <div className="bg-blue-150 border-0 h-full flex flex-wrap content-center px-3 py-8 lg:px-24 lg:py-24 relative">
                       <div className="w-full text-center mb-2">
                         <div className="relative inline-block mx-auto text-white pr-12 text-[10rem]  font-bold" style={{ lineHeight: 0.972, letterSpacing: "-.163rem" }}>
                           60
@@ -192,7 +192,7 @@ function WhyWeSlider() {
 
                 <div className="w-full lg:w-1/3">
                   <div className="px-3 py-3">
-                    <div className={`py-4 bg-red-200 px-14 relative font-comfort `}>
+                    <div className={`py-4 bg-pink-150 px-14 relative font-comfort `}>
                       <p className={`${Styles.ptext}`}>On average a further 2 hours commute time, is added to a typical 9-5 working day. Meaning our time to 'switch off' is limited.</p>
 
                       <svg xmlns="http://www.w3.org/2000/svg" className="w-full h-full absolute left-0 bottom-0 text-white pointer-events-none" viewBox="0 0 331 227.75" preserveAspectRatio="none">
@@ -204,7 +204,7 @@ function WhyWeSlider() {
                   </div>
 
                   <div className="px-3 py-3">
-                    <div className="bg-green-200 py-12 px-10 relative">
+                    <div className="bg-green-150 py-12 px-10 relative">
                       <div className="w-full text-center">
                         <div className="relative inline-block mx-auto text-[6rem] font-bold text-stat-md text-white pr-12">
                           34
@@ -238,7 +238,7 @@ function WhyWeSlider() {
               <div className="flex flex-wrap max-w-5xl mx-auto py-10 md:py-16 lg:py-21">
                 <div className="w-full lg:w-2/3">
                   <div className="px-3 py-3 h-full">
-                    <div className="bg-blue-200 border-0 h-full flex flex-wrap content-center px-3 py-8 lg:px-24 lg:py-24 relative">
+                    <div className="bg-blue-150 border-0 h-full flex flex-wrap content-center px-3 py-8 lg:px-24 lg:py-24 relative">
                       <div className="w-full text-center mb-2">
                         <div className="relative inline-block mx-auto text-white pr-12 text-[10rem]  font-bold" style={{ lineHeight: 0.972, letterSpacing: "-.163rem" }}>
                           60
@@ -273,7 +273,7 @@ function WhyWeSlider() {
 
                 <div className="w-full lg:w-1/3">
                   <div className="px-3 py-3">
-                    <div className={`py-4 bg-red-200 px-14 relative font-comfort `}>
+                    <div className={`py-4 bg-pink-150 px-14 relative font-comfort `}>
                       <p className={`${Styles.ptext}`}>On average a further 2 hours commute time, is added to a typical 9-5 working day. Meaning our time to 'switch off' is limited.</p>
 
                       <svg xmlns="http://www.w3.org/2000/svg" className="w-full h-full absolute left-0 bottom-0 text-white pointer-events-none" viewBox="0 0 331 227.75" preserveAspectRatio="none">
@@ -285,7 +285,7 @@ function WhyWeSlider() {
                   </div>
 
                   <div className="px-3 py-3">
-                    <div className="bg-green-200 py-12 px-10 relative">
+                    <div className="bg-green-150 py-12 px-10 relative">
                       <div className="w-full text-center">
                         <div className="relative inline-block mx-auto text-[6rem] font-bold text-stat-md text-white pr-12">
                           34
