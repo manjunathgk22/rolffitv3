@@ -68,7 +68,7 @@ function App() {
     <>
       <FadeInWhenVisible>
         <div className="overflow-visible " id="home">
-          <div style={{ height: "100vh" }}>
+          <div>
             <Header />
           </div>
           <main>
