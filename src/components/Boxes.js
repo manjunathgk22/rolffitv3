@@ -22,7 +22,7 @@ function Boxes() {
             </svg>
             <div class="absolute top-0 left-0 -ml-[15px] mt-[15px] header-svg">
               <div class="py-2 px-4 relative">
-                <span class="relative z-10 font-bold font-serif text-white">Relief from physical fatigue</span>
+                <span class="relative z-10 font-bold font-serif text-white font-geomanist">Relief from physical fatigue</span>
                 <svg class="transition w-full h-full absolute left-0 bottom-0 pointer-events-none text-blue-200 " viewBox="0 0 133 35" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
                   <path d="M2.922 3.29c-3.157 8.366 2.386 17.812-1.478 26.168-.636 1.373-1.174 2.854 2.772 4.01 3.259.954 17.176.574 26.96.519 25.084-.14 52.214-1.085 77.133-.515 3.233.074 6.556.153 9.704-.006 4.275-.216 7.727-.856 9.875-1.601 3.721-1.29 4.02-7.144 4.1-8.621.405-7.523-1.313-9.58-.908-17.103.047-.875-1.823-2.72-3.82-3.505-3.938-1.546-12.053-1.116-20.88-1.372-19.077-.553-37.254-.091-56.525.072-8.868.076-18.995-.246-27.834-.23-5.87.012-13.272-.446-17.217.726-1.43.424-1.692.952-1.882 1.457z" stroke="none" fill="currentColor" fill-rule="evenodd" stroke-opacity=".111"></path>
                 </svg>
@@ -43,7 +43,7 @@ function Boxes() {
             </svg>
             <div class="absolute top-0 left-0 -ml-[15px] mt-[15px] header-svg">
               <div class="py-2 px-4 relative">
-                <span class="relative z-10 font-bold font-serif text-white">Bye-bye stress and anxiety</span>
+                <span class="relative z-10 font-bold font-serif text-white font-geomanist">Bye-bye stress and anxiety</span>
                 <svg class="transition w-full h-full absolute left-0 bottom-0 pointer-events-none text-blue-200 " viewBox="0 0 133 35" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
                   <path d="M2.922 3.29c-3.157 8.366 2.386 17.812-1.478 26.168-.636 1.373-1.174 2.854 2.772 4.01 3.259.954 17.176.574 26.96.519 25.084-.14 52.214-1.085 77.133-.515 3.233.074 6.556.153 9.704-.006 4.275-.216 7.727-.856 9.875-1.601 3.721-1.29 4.02-7.144 4.1-8.621.405-7.523-1.313-9.58-.908-17.103.047-.875-1.823-2.72-3.82-3.505-3.938-1.546-12.053-1.116-20.88-1.372-19.077-.553-37.254-.091-56.525.072-8.868.076-18.995-.246-27.834-.23-5.87.012-13.272-.446-17.217.726-1.43.424-1.692.952-1.882 1.457z" stroke="none" fill="currentColor" fill-rule="evenodd" stroke-opacity=".111"></path>
                 </svg>
@@ -64,7 +64,7 @@ function Boxes() {
             </svg>
             <div class="absolute top-0 left-0 -ml-[15px] mt-[15px] header-svg">
               <div class="py-2 px-4 relative">
-                <span class="relative z-10 font-bold font-serif text-white">Employee wellness</span>
+                <span class="relative z-10 font-bold font-serif text-white font-geomanist">Employee wellness</span>
                 <svg class="transition w-full h-full absolute left-0 bottom-0 pointer-events-none text-blue-200 " viewBox="0 0 133 35" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
                   <path d="M2.922 3.29c-3.157 8.366 2.386 17.812-1.478 26.168-.636 1.373-1.174 2.854 2.772 4.01 3.259.954 17.176.574 26.96.519 25.084-.14 52.214-1.085 77.133-.515 3.233.074 6.556.153 9.704-.006 4.275-.216 7.727-.856 9.875-1.601 3.721-1.29 4.02-7.144 4.1-8.621.405-7.523-1.313-9.58-.908-17.103.047-.875-1.823-2.72-3.82-3.505-3.938-1.546-12.053-1.116-20.88-1.372-19.077-.553-37.254-.091-56.525.072-8.868.076-18.995-.246-27.834-.23-5.87.012-13.272-.446-17.217.726-1.43.424-1.692.952-1.882 1.457z" stroke="none" fill="currentColor" fill-rule="evenodd" stroke-opacity=".111"></path>
                 </svg>
@@ -85,7 +85,7 @@ function Boxes() {
             </svg>
             <div class="absolute top-0 left-0 -ml-[15px] mt-[15px] header-svg">
               <div class="py-2 px-4 relative">
-                <span class="relative z-10 font-bold font-serif text-white">Positive energy</span>
+                <span class="relative z-10 font-bold font-serif text-white font-geomanist">Positive energy</span>
                 <svg class="transition w-full h-full absolute left-0 bottom-0 pointer-events-none text-blue-200 " viewBox="0 0 133 35" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
                   <path d="M2.922 3.29c-3.157 8.366 2.386 17.812-1.478 26.168-.636 1.373-1.174 2.854 2.772 4.01 3.259.954 17.176.574 26.96.519 25.084-.14 52.214-1.085 77.133-.515 3.233.074 6.556.153 9.704-.006 4.275-.216 7.727-.856 9.875-1.601 3.721-1.29 4.02-7.144 4.1-8.621.405-7.523-1.313-9.58-.908-17.103.047-.875-1.823-2.72-3.82-3.505-3.938-1.546-12.053-1.116-20.88-1.372-19.077-.553-37.254-.091-56.525.072-8.868.076-18.995-.246-27.834-.23-5.87.012-13.272-.446-17.217.726-1.43.424-1.692.952-1.882 1.457z" stroke="none" fill="currentColor" fill-rule="evenodd" stroke-opacity=".111"></path>
                 </svg>
@@ -106,7 +106,7 @@ function Boxes() {
             </svg>
             <div class="absolute top-0 left-0 -ml-[15px] mt-[15px] header-svg">
               <div class="py-2 px-4 relative">
-                <span class="relative z-10 font-bold font-serif text-white">Lower absenteeism</span>
+                <span class="relative z-10 font-bold font-serif text-white font-geomanist">Lower absenteeism</span>
                 <svg class="transition w-full h-full absolute left-0 bottom-0 pointer-events-none text-blue-200 " viewBox="0 0 133 35" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
                   <path d="M2.922 3.29c-3.157 8.366 2.386 17.812-1.478 26.168-.636 1.373-1.174 2.854 2.772 4.01 3.259.954 17.176.574 26.96.519 25.084-.14 52.214-1.085 77.133-.515 3.233.074 6.556.153 9.704-.006 4.275-.216 7.727-.856 9.875-1.601 3.721-1.29 4.02-7.144 4.1-8.621.405-7.523-1.313-9.58-.908-17.103.047-.875-1.823-2.72-3.82-3.505-3.938-1.546-12.053-1.116-20.88-1.372-19.077-.553-37.254-.091-56.525.072-8.868.076-18.995-.246-27.834-.23-5.87.012-13.272-.446-17.217.726-1.43.424-1.692.952-1.882 1.457z" stroke="none" fill="currentColor" fill-rule="evenodd" stroke-opacity=".111"></path>
                 </svg>
@@ -127,7 +127,7 @@ function Boxes() {
             </svg>
             <div class="absolute top-0 left-0 -ml-[15px] mt-[15px] header-svg">
               <div class="py-2 px-4 relative">
-                <span class="relative z-10 font-bold font-serif text-white">Motivated workforce</span>
+                <span class="relative z-10 font-bold font-serif text-white font-geomanist">Motivated workforce</span>
                 <svg class="transition w-full h-full absolute left-0 bottom-0 pointer-events-none text-blue-200 " viewBox="0 0 133 35" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
                   <path d="M2.922 3.29c-3.157 8.366 2.386 17.812-1.478 26.168-.636 1.373-1.174 2.854 2.772 4.01 3.259.954 17.176.574 26.96.519 25.084-.14 52.214-1.085 77.133-.515 3.233.074 6.556.153 9.704-.006 4.275-.216 7.727-.856 9.875-1.601 3.721-1.29 4.02-7.144 4.1-8.621.405-7.523-1.313-9.58-.908-17.103.047-.875-1.823-2.72-3.82-3.505-3.938-1.546-12.053-1.116-20.88-1.372-19.077-.553-37.254-.091-56.525.072-8.868.076-18.995-.246-27.834-.23-5.87.012-13.272-.446-17.217.726-1.43.424-1.692.952-1.882 1.457z" stroke="none" fill="currentColor" fill-rule="evenodd" stroke-opacity=".111"></path>
                 </svg>
@@ -148,7 +148,7 @@ function Boxes() {
             </svg>
             <div class="absolute top-0 left-0 -ml-[15px] mt-[15px] header-svg">
               <div class="py-2 px-4 relative">
-                <span class="relative z-10 font-bold font-serif text-white">Boost employee retention</span>
+                <span class="relative z-10 font-bold font-serif text-white font-geomanist">Boost employee retention</span>
                 <svg class="transition w-full h-full absolute left-0 bottom-0 pointer-events-none text-blue-200 " viewBox="0 0 133 35" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
                   <path d="M2.922 3.29c-3.157 8.366 2.386 17.812-1.478 26.168-.636 1.373-1.174 2.854 2.772 4.01 3.259.954 17.176.574 26.96.519 25.084-.14 52.214-1.085 77.133-.515 3.233.074 6.556.153 9.704-.006 4.275-.216 7.727-.856 9.875-1.601 3.721-1.29 4.02-7.144 4.1-8.621.405-7.523-1.313-9.58-.908-17.103.047-.875-1.823-2.72-3.82-3.505-3.938-1.546-12.053-1.116-20.88-1.372-19.077-.553-37.254-.091-56.525.072-8.868.076-18.995-.246-27.834-.23-5.87.012-13.272-.446-17.217.726-1.43.424-1.692.952-1.882 1.457z" stroke="none" fill="currentColor" fill-rule="evenodd" stroke-opacity=".111"></path>
                 </svg>
@@ -169,7 +169,7 @@ function Boxes() {
             </svg>
             <div class="absolute top-0 left-0 -ml-[15px] mt-[15px] header-svg">
               <div class="py-2 px-4 relative">
-                <span class="relative z-10 font-bold font-serif text-white">Build up healthy work culture</span>
+                <span class="relative z-10 font-bold font-serif text-white font-geomanist">Build up healthy work culture</span>
                 <svg class="transition w-full h-full absolute left-0 bottom-0 pointer-events-none text-blue-200 " viewBox="0 0 133 35" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
                   <path d="M2.922 3.29c-3.157 8.366 2.386 17.812-1.478 26.168-.636 1.373-1.174 2.854 2.772 4.01 3.259.954 17.176.574 26.96.519 25.084-.14 52.214-1.085 77.133-.515 3.233.074 6.556.153 9.704-.006 4.275-.216 7.727-.856 9.875-1.601 3.721-1.29 4.02-7.144 4.1-8.621.405-7.523-1.313-9.58-.908-17.103.047-.875-1.823-2.72-3.82-3.505-3.938-1.546-12.053-1.116-20.88-1.372-19.077-.553-37.254-.091-56.525.072-8.868.076-18.995-.246-27.834-.23-5.87.012-13.272-.446-17.217.726-1.43.424-1.692.952-1.882 1.457z" stroke="none" fill="currentColor" fill-rule="evenodd" stroke-opacity=".111"></path>
                 </svg>

@@ -8,7 +8,7 @@ function Checklist() {
           <div data-v-ed816bee="" class="CheckList__item__number">
             1
           </div>
-          <span data-v-ed816bee="" class="text-2xl md:text-2xl lg:text-2xl font-extrabold mb-2 block">
+          <span data-v-ed816bee="" class="text-2xl md:text-2xl lg:text-2xl font-extrabold mb-2 block font-geomanist">
             get a free demo
           </span>
           <span data-v-ed816bee="" class="text-sm font-comfort font-light">
@@ -21,7 +21,7 @@ function Checklist() {
           <div data-v-ed816bee="" class="CheckList__item__number">
             2
           </div>
-          <span data-v-ed816bee="" class="text-2xl md:text-2xl lg:text-2xl font-extrabold mb-2 block">
+          <span data-v-ed816bee="" class="text-2xl md:text-2xl lg:text-2xl font-extrabold mb-2 block font-geomanist">
             discuss your needs
           </span>
           <span data-v-ed816bee="" class="text-sm font-comfort font-light">
@@ -34,7 +34,7 @@ function Checklist() {
           <div data-v-ed816bee="" class="CheckList__item__number">
             3
           </div>
-          <span data-v-ed816bee="" class="text-2xl md:text-2xl lg:text-2xl font-extrabold mb-2 block">
+          <span data-v-ed816bee="" class="text-2xl md:text-2xl lg:text-2xl font-extrabold mb-2 block font-geomanist">
             build a healthy workplace together
           </span>
           <span data-v-ed816bee="" class="text-sm font-comfort font-light">

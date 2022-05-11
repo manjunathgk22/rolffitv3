@@ -8,9 +8,9 @@ function Stats() {
           <div className="px-3 py-3 h-full">
             <div className="bg-blue-150 h-full flex flex-wrap content-center px-3 py-8 lg:px-24 lg:py-24 relative">
               <div className="w-full text-center mb-2">
-                <div className="relative inline-block mx-auto text-white pr-12  text-8xl lg:text-[10rem]  font-bold" style={{ lineHeight: 0.972, letterSpacing: "-.163rem" }}>
+                <div className="relative font-geomanist inline-block mx-auto text-white pr-12  text-8xl lg:text-[10rem]  font-bold" style={{ lineHeight: 0.972, letterSpacing: "-.163rem" }}>
                   62
-                  <span className="h3 lg:h2  stat-percentage pl-2 text-[4rem] font-bold lg:align-[75%] align-[50%]">%</span>
+                  <span className="h3 lg:h2  stat-percentage pl-2 text-[4rem] font-bold lg:align-[75%] align-[50%] font-geomanist">%</span>
                   {/* <svg className="w-24 lg:w-[8.5rem] h-24 lg:h-[8.5rem] text-black absolute right-0 bottom-0 -mb-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 763 576">
                     <path d="M362.5 1c-18.8 3.8-44.2 21.4-74.2 51.7-6.2 6.2-11.4 11.3-11.7 11.3-.3 0-6.4-3.6-13.6-7.9-20.5-12.5-28.3-14.7-48.8-13.8-17.9.8-32.1 4.2-58.1 13.8-18.9 7-17.9 6.9-13.7 1.5 4-5.3 5.6-10 5.6-16.7 0-9-7.3-10.9-14.5-3.6-4.4 4.3-6.5 9.4-6.5 15.4 0 4.1-1.5 4.2-6.3.5-3.6-2.7-5.7-6.6-5.7-10.6 0-1.2-.9-4-2-6.4-3-6.5-10.2-8.6-17.3-5-1.4.7-3.9-.3-11-4.5-17.3-10.2-25-13.3-35.7-14.3-13.2-1.3-22.6 3.8-28 15.1-4.2 8.7-4.7 16.2-2.5 32.4l1.8 13-2.8 3.3c-5.7 6.8-7 14.8-3.6 22.4 3.2 7 11.1 11.2 19.1 10.1 3.4-.4 3.7-.2 8 6.2 5.8 8.5 17.8 20.6 25.8 26 7.3 4.9 17.9 10.1 20.6 10.1 2.2 0 2.3-1.1-2.5 26-2.9 16.1-3.3 20.8-3.3 36-.1 15.4.2 18.3 2.1 24.5 5.5 17.2 17.9 30.4 38.5 41l7.4 3.8-7.1 25.1-7.2 25.1-5.9.7c-11.2 1.4-23.5 9.5-34.5 22.4-13.5 16-32.1 51.3-36.8 69.9-.9 3.3-1.9 4.5-5.9 6.7-6.4 3.6-12.8 10.6-15.9 17.6-1.5 3.1-4.3 7.7-6.3 10.2-7.2 8.7-10.2 17.9-6.4 19.4 3 1.2 5.3-.4 8.1-5.5l2.7-5 1.7 3.3c2.8 5.4 5.5 7.3 10.5 7.2 8.1-.2 13.1-7.8 10.4-15.8-1.3-4.1-6.1-8.5-10.1-9.3l-2.9-.5 1.8-3c.9-1.7 3.7-4.8 6.2-7l4.5-4 .6 3.1c1.4 6.7 5.6 10.4 16.5 14.3l6.2 2.2-.5 3.8c-.5 3.2-.2 3.9 1.8 4.7 1.3.6 18.4 1.7 37.9 2.6 19.5.9 41.7 2.3 49.4 3.1 7.6.8 16.3 1.5 19.5 1.4 3.1 0 7 .3 8.8.6 2.8.5 3.4.3 4.4-1.9.9-1.9.9-3.4 0-5.8-.6-1.8-1-3.3-.9-3.4.7-.4 64.9-2.8 80.3-3 31.8-.4 91-2.6 93.3-3.5 3.3-1.4 2.8-4.8-1.8-11.8-6.4-10-15.7-17.9-28.1-23.7-3.4-1.6-4.3-3.1-11.3-18.6-4.2-9.2-7.6-17.7-7.6-18.8 0-1.1-.6-3.8-1.4-5.8-.8-2.1-2.4-9.9-3.5-17.3-1.2-7.4-2.6-16.4-3.1-20-2-12.8-3.9-31.8-4.6-45.5l-.7-14 8.6-5.8c10.6-7.2 20.8-16.5 28.7-26.4 12-14.9 15.4-25.5 15.4-47.8 0-17.2-.2-18.5-8.9-55-3.6-14.9-7-29.6-7.6-32.7-.9-4.9-1.4-5.9-3.5-6.4-1.4-.4-3.1-.1-4 .7-2.6 2.1-1.3 10.1 6.4 41.4 8.1 32.6 9.7 42.5 8.9 56.7-.9 19-6.4 30.4-22.3 46.5-9.6 9.7-13.8 12.7-11.8 8.5.5-.9.9-5.3.9-9.7 0-7.6-.1-8-2.3-8.3-3.7-.5-4.9 1.4-5.5 8.4-.4 5.4-1 7.1-3.1 9.3-2.3 2.3-3.4 2.6-8.9 2.4-6.4-.1-12.7-2-29-8.8-11.5-4.8-26.5-8.5-34.1-8.5-9.2 0-17.4 2.4-33 9.4-16 7.3-25.2 10.6-29.4 10.6-4.8 0-11.4-4.1-15.6-9.8-3.7-5-5.5-5.9-9-4.6-4.2 1.6.7 12.3 8.4 18.4 6 4.7 10.7 6.3 18.9 6.3 7.4 0 7.5 0 24.1-8.5 19.2-10 25.5-12.1 36-12 10 0 16.8 1.9 34.2 9.6 15.1 6.8 20.5 8.5 27.3 8.7 4 .1 3.9.1-5 4.4-18.3 8.9-33 12.3-56.5 13.2-24.9.8-45.5-2.7-69.5-12.1-33.6-13.2-50.7-27.1-57.6-46.7-3.5-10.1-3.1-27.4 1.5-55.4 6-35.9 6.2-37.5 4.5-38.6-2.4-1.5-5.7-1-7.2 1.2-1.5 2-1.5 2-8.3-1.4-3.8-1.9-9.6-5.5-13-8.1-10.2-7.6-25.5-25-25.4-28.8.1-2.7 2.7-4.5 7.5-5.2 2.8-.5 7.3-1.9 10.1-3.2 5-2.4 5.3-2.4 11.3-.8 14.1 3.6 26.6-3.4 33.9-19.2l2.3-4.9 7.2.1c12.9.2 13.5.3 13.9 2.1.3 1.5 1.7 1.8 10.3 2 10.4.2 11.5-.2 11.5-4.4 0-1.8 1.5-2.6 8.8-5.3 12.5-4.5 32.1-9.8 43.6-11.7 8.3-1.4 11.1-1.5 18.2-.5 15 2.2 25 6.5 47.1 20.3 15.3 9.6 18.6 10.6 20.5 6.3 1.1-2.5 1-2.9-2.5-5.8l-3.8-3.2 11.3-11C321.6 33.9 350.6 14 361.3 14c7.6 0 14.9 4.8 19 12.5 3.3 6.1 3 27.2-.7 44.7-5 24.5-15.1 50-28.5 71.7-2.8 4.6-5.1 9-5.1 9.7 0 1.6 4.6 4.5 6.3 3.8 2.4-.9 11.4-15.6 18.1-29.5 14.5-30 23-64.8 23.1-94.4 0-13.3-.1-14.3-2.8-19.6-3.3-6.8-8.1-10.5-15.6-11.9-6-1.1-6.9-1.1-12.6 0zM55.9 26.1c7.1 2.2 19.9 8.4 27.9 13.5 3.7 2.4 5.2 4 5.2 5.6.1 3.5 3.4 10.2 7.5 14.6 3.3 3.7 3.5 4.4 2.9 7.9-1 5.4-2.7 8.4-7.3 12.6-3.8 3.4-11.4 6.7-12.7 5.4-.4-.3.1-2.4 1-4.7 3.1-7.8 1.4-19.4-3.2-21.9-7.1-3.8-17 2.9-18.8 12.6-.3 1.7.1 5.4.9 8.3l1.5 5.1-2.7 1.3c-6.7 3.4-6.8 3.4-7.4-5.1-.5-7.1-.9-8.1-3.7-10.6-3.8-3.4-9.5-3.7-13.4-.6-1.5 1.2-2.9 2-3.1 1.8-1.2-1.3-3.7-17.9-3.8-25.4 0-9.4 2-16.3 5.6-19.4 5.3-4.3 12-4.6 23.6-1zm98.8 265.8c20.9 7 33.1 9.2 54.3 9.8 25.6.8 44-2.3 65.6-11.1l8-3.3 1.2 13.6c1.8 21 5.9 53.9 8.8 71.6 2.3 13.5 3.3 17.4 6.9 25 2.3 4.9 6.8 14.7 10 21.7l5.8 12.8h3.7c2.6 0 5.4 1.1 9.6 3.9 6.5 4.3 15.1 12.6 13.7 13.4-1.7 1-46.5 3-68.5 3.1-15.9.1-23-.2-23.9-1.1-3.4-3.4 6.8-16.6 15.1-19.5 2.5-.9 9.4-2.4 15.3-3.4 13.1-2.1 15.9-4.1 12.3-8.9-1.4-1.9-1.6-1.9-13.2-.1-16.2 2.5-19.2 3.3-24 6.7-8.9 6.1-13.9 13.9-15.6 24.4-.5 2.9-4.4 3.3-36.4 4.1l-28 .7-2.4-5.8c-1.8-4.5-4.3-7.7-11.2-14.4l-8.8-8.6v-11.7c0-15.5 2.2-32.1 6.7-49.9 2-8.1 3.3-15.4 3-16.3-1-2.5-3.4-3-6-1.3-5.4 3.5-12.7 40.2-12.7 64v9.9l-2.9-.7c-2-.4-3.4-.1-4.5 1.1-3 2.9-1.5 5.6 4.9 9.2 8.3 4.7 14 9.6 19 16.3 4.8 6.5 9.1 17.5 7.2 18.2-1.7.6-38.8-1.1-52.7-2.4-6.3-.6-17.3-1.3-24.5-1.6-7.1-.3-13.6-1-14.2-1.5-2.5-2-1.4-5.5 3.2-9.7 9-8.2 23.6-16.1 35.8-19.2 4.7-1.1 4.8-1.2 4.5-4.8-.3-3.3-.6-3.6-3.6-3.9-1.9-.2-5.4.4-8 1.2-2.5.9-4.9 1.6-5.3 1.6-1 0 2.1-13.7 10.3-46 12.4-49 24.5-92 25.9-92 .5 0 7.5 2.2 15.6 4.9zm-51.8 90.6c-5.5 22-10.4 41.7-11 43.8-.8 3.1-2.4 4.8-8.7 9.4-4.2 3.2-10 7.9-12.8 10.5-4.8 4.5-5.2 4.7-8.5 3.8-8.1-2.2-14.1-9-14.7-16.5-.4-4.5.3-6.9 4.3-17.1 11-27.6 25-50 38.1-60.8 5.1-4.2 22.3-14.1 23.1-13.3.1.2-4.3 18.2-9.8 40.2z"></path>
                     <path d="M261.5 340c-1.7 1.9-1.7 2.6-.6 8.8 5.4 28.6 6.1 33.9 6.1 49.4 0 14.8.1 15.7 2 16.3 3 1 5.7-.3 6.4-3 .3-1.3.6-5.7.5-9.7 0-4 .2-8.5.6-9.9.9-3.8-7.1-49.9-9.2-52.1-2.1-2.3-3.6-2.3-5.8.2zM259.7 163.9c-2.5.9-7.5 8.5-8.7 13.1l-1 3.8-6.3-1.5c-8.8-2-34.3-2.8-44.9-1.4-7.4 1-16.1 2.9-25.4 5.6-1.9.6-2.5-.2-5-6.7-3.4-8.9-5-11-8.3-10.6-4.2.5-6.6 6-6.5 14.3.1 3.8.4 7.9.5 9.1.3 1.7-1.7 3.7-9.9 9.8-5.7 4.2-10.5 8.3-10.9 9.2-.9 2.4 1.4 6.4 3.7 6.4 1.1 0 5.3-2.6 9.3-5.8 21-16.7 52.5-25.8 80.3-23.1 23.2 2.2 44.8 11.2 56.9 23.8 2.8 2.9 4.7 4.1 6.7 4.1 3.6 0 5.6-3.6 3.9-6.9-1.8-3.2-13.1-12.2-21-16.6-5.1-2.9-6.9-4.4-6.5-5.5 2.7-6.6 2-18.3-1.2-20.7-2-1.4-3-1.5-5.7-.4z"></path>
@@ -18,7 +18,7 @@ function Stats() {
                   </svg> */}
                 </div>
               </div>
-              <div className={`h6 sm:h5 md:h4 w-full text-center px-4 font-extrabold text-2xl lg:text-4xl`}>of employees report neck pain and 13% report headache during working hours</div>
+              <div className={`h6 sm:h5 md:h4 w-full text-center px-4 font-extrabold text-2xl lg:text-4xl font-geomanist`}>of employees report neck pain and 13% report headache during working hours</div>
               <div className="w-full text-center px-4">{/* <p className={`${Styles.ptext} font-comfort`}>at the end of the day resulting in workplace stress and productivity loss.</p> */}</div>
 
               <svg xmlns="http://www.w3.org/2000/svg" className="w-full h-full absolute left-0 top-0 text-white pointer-events-none" viewBox="0 0 674 593.16" preserveAspectRatio="none">
@@ -38,7 +38,7 @@ function Stats() {
         <div className="w-full lg:w-1/3">
           <div className="px-3 py-3">
             <div className={`py-4 bg-pink-150 px-14 relative font-comfort `}>
-              <p className="text-lg font-bold">More than 1 in 5 admitted to calling in sick to avoid workplace stress with 32% even considering resigning.</p>
+              <p className="text-lg font-bold font-geomanist">More than 1 in 5 admitted to calling in sick to avoid workplace stress with 32% even considering resigning.</p>
 
               <svg xmlns="http://www.w3.org/2000/svg" className="w-full h-full absolute left-0 bottom-0 text-white pointer-events-none" viewBox="0 0 331 227.75" preserveAspectRatio="none">
                 <g data-name="Layer 2">
@@ -51,9 +51,9 @@ function Stats() {
           <div className="px-3 py-3">
             <div className="bg-green-150 py-12 px-10 relative">
               <div className="w-full text-center">
-                <div className="relative inline-block mx-auto text-[4rem] font-bold text-stat-md text-white pr-12">
+                <div className="relative inline-block mx-auto text-[4rem] font-bold text-stat-md text-white pr-12 font-geomanist">
                   $300
-                  <span className="h4 stat-percentage pl-1 text-[1.5rem]" style={{ verticalAlign: "100%" }}>
+                  <span className="h4 stat-percentage pl-1 text-[1.5rem] font-geomanist" style={{ verticalAlign: "100%" }}>
                     billion
                   </span>
                   {/* <svg xmlns="http://www.w3.org/2000/svg" className="w-20 h-20 text-black absolute right-5 bottom-10 pin-r -mb-4" viewBox="0 0 88 54">
@@ -65,7 +65,7 @@ function Stats() {
                   </svg> */}
                 </div>
               </div>
-              <div className="w-full text-center text-2xl lg:text-2xl leading-[1.5rem] font-bold mb-2">is lost by businesses around the world as a result of workplace stress.</div>
+              <div className="w-full text-center text-2xl lg:text-2xl leading-[1.5rem] font-bold mb-2 font-geomanist">is lost by businesses around the world as a result of workplace stress.</div>
 
               <svg xmlns="http://www.w3.org/2000/svg" className="w-full h-full absolute bottom-0 left-0 text-white pointer-events-none" viewBox="0 0 333.04 329" preserveAspectRatio="none">
                 <g data-name="Layer 2">
