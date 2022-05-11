@@ -12,7 +12,7 @@
   }
 }
 .slick-dots {
-  overflow: hidden;
+  overflow: auto;
   justify-content: space-evenly;
 }
 @media screen and (max-width: 768px) {
