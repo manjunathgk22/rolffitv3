@@ -68,7 +68,7 @@ function HowItWorks() {
   };
   return (
     <div style={{ backgroundColor: "#f9f1e4" }} className={`relative py-8 clipTop clipbottom`}>
-      <div ref={dotRef} className="max-w-6xl container m-auto p-4">
+      <div ref={dotRef} className="max-w-6xl container m-auto p-4 lg:py-16">
         <div className="h5 sm:h4 md:h3 lg:text-6xl text-4xl font-bold text-center mb-8">how it works</div>
         <Slider {...settings}>
           <div>
