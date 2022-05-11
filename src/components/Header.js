@@ -11,7 +11,7 @@ function Header() {
     document.getElementById("contact")?.scrollIntoView({ block: "end", behavior: "smooth" });
   };
   return (
-    <div style={{ height: "90vh" }} className={`flex items-center bg-[url('/src/assets/images/hero.jpeg')] bg-cover bg-no-repeat relative bg-bottom ${Styles.headerwrapper}`}>
+    <div style={{ height: "90vh" }} className={`flex max-h-[615px] lg:max-h-[90vh] items-center bg-[url('/src/assets/images/hero.jpeg')] bg-cover bg-no-repeat relative bg-bottom ${Styles.headerwrapper}`}>
       <div className="z-100 absolute top-4 left-8 w-[calc(100%-4rem)] flex">
         {/* <LogoSVG className={`h-auto lg:w-40 md:w-36 w-32 ${Styles.whitesvg}`} /> */}
         <Nav />
