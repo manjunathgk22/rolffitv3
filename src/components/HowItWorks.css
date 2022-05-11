@@ -25,6 +25,7 @@
 .slick-dots .slick-active .dotText {
   /* color: red; */
   font-weight: 800;
+  font-family: "Geomanist";
   transition: all 0.1s;
 }
 .slider-progress {
