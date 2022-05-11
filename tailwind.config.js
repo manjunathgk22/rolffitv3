@@ -3,6 +3,7 @@ module.exports = {
   theme: {
     fontFamily: {
       comfort: ["Comfortaa"],
+      geomanist: ["Geomanist"],
     },
 
     extend: {

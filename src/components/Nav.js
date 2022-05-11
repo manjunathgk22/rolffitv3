@@ -32,7 +32,7 @@ export default function Header() {
     setIsNavOpen(false);
   };
   return (
-    <div className=" z-20 flex items-center justify-between grow py-8 lg:justify-center lg:items-center">
+    <div className=" z-40 flex items-center justify-between grow py-8 lg:justify-center lg:items-center">
       <a href="/">
         <img src={logo} className={`h-auto lg:w-40 md:w-36 w-32 -mt-8 lg:mt-0 ${Styles.whitesvg}`} />
       </a>
@@ -41,13 +41,13 @@ export default function Header() {
           className="HAMBURGER-ICON space-y-1 bg-black h-[46px] w-[46px] flex items-center justify-center fixed right-8 top-6 flex-col rounded-full"
           onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
         >
-          <span className="block h-0.5 w-6 animate-pulse bg-white"></span>
-          <span className="block h-0.5 w-6 animate-pulse bg-white"></span>
-          <span className="block h-0.5 w-6 animate-pulse bg-white"></span>
+          <span className="block h-0.5 w-6 bg-white"></span>
+          <span className="block h-0.5 w-6 bg-white"></span>
+          <span className="block h-0.5 w-6 bg-white"></span>
         </div>
         <AnimatePresence>
           {isNavOpen ? (
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className={`${isNavOpen ? "showMenuNav" : "hideMenuNav"} z-50`}>
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className={`${isNavOpen ? "showMenuNav" : "hideMenuNav"} z-40`}>
               {" "}
               <div
                 className="CROSS-ICON flex self-end justify-end top-0 right-0 px-8 py-8"
@@ -60,32 +60,32 @@ export default function Header() {
               </div>
               <ul className="MENU-LINK-MOBILE-OPEN flex px-8 flex-col items-center justify-between min-h-[250px]">
                 <li class="w-full mb-8">
-                  <a class="text-black text-4xl relative font-bold" onClick={gotoHome}>
+                  <a class="text-black font-geomanist text-4xl relative font-bold" onClick={gotoHome}>
                     home
                   </a>
                 </li>
                 <li className="w-full mb-8">
-                  <a class="text-black text-4xl relative font-bold" onClick={gotohowitwors}>
+                  <a class="text-black font-geomanist text-4xl relative font-bold" onClick={gotohowitwors}>
                     how it works
                   </a>
                 </li>
                 <li className="w-full mb-8">
-                  <a class="text-black text-4xl relative font-bold" onClick={gotoHealth}>
+                  <a class="text-black font-geomanist text-4xl relative font-bold" onClick={gotoHealth}>
                     mental health
                   </a>
                 </li>
                 <li className="w-full mb-8">
-                  <a class="text-black text-4xl relative font-bold" onClick={gotbenefits}>
+                  <a class="text-black font-geomanist text-4xl relative font-bold" onClick={gotbenefits}>
                     benefits
                   </a>
                 </li>
                 <li className="w-full mb-8">
-                  <a class="text-black text-4xl relative font-bold" onClick={gotofaq}>
+                  <a class="text-black font-geomanist text-4xl relative font-bold" onClick={gotofaq}>
                     faqs
                   </a>
                 </li>
                 <li className="w-full mb-8">
-                  <a class="text-black text-4xl relative font-bold" onClick={gotocontact}>
+                  <a class="text-black font-geomanist text-4xl relative font-bold" onClick={gotocontact}>
                     contact
                   </a>
                 </li>

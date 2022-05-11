@@ -46,7 +46,7 @@ function Info() {
               <img src={massage} className='"w-28 h-28 text-black block mx-auto' />
             </div>
 
-            <div className="text-2xl md:text-2xl lg:text-2xl font-extrabold text-center leading-4 mb-4">therapeutic experience</div>
+            <div className="font-geomanist text-2xl md:text-2xl lg:text-2xl font-extrabold text-center leading-4 mb-6">therapeutic experience</div>
 
             <div className="text-center">
               <p className="text-sm font-comfort font-light">Bring out the best in your employees by relieving work pressures with a head massage. Our therapists carefully massage your pressure points on the scalp to relieve you of the tension. Get the most relaxing corporate head massages that rejuvenate you.</p>
@@ -102,7 +102,7 @@ function Info() {
               <img src={benefits} className='"w-28 h-28 text-black block mx-auto' />
             </div>
 
-            <div className="text-2xl md:text-2xl lg:text-2xl font-extrabold text-center leading-4 mb-4">employee well-being</div>
+            <div className="font-geomanist text-2xl md:text-2xl lg:text-2xl font-extrabold text-center leading-4 mb-6">employee well-being</div>
 
             <div className="text-center">
               <p className="text-sm font-comfort font-light">Our therapeutic massages make you look forward to coming back to work. We help you reduce fatigue, and encourage employee engagement to boost your work productivity. We help to rebalance your work-life to improve your in-office performance.</p>
@@ -129,7 +129,7 @@ function Info() {
               <img src={wellness} className='"w-28 h-28 text-black block mx-auto' />
             </div>
 
-            <div className="text-2xl md:text-2xl lg:text-2xl font-extrabold text-center leading-4 mb-4">company well-being</div>
+            <div className="font-geomanist text-2xl md:text-2xl lg:text-2xl font-extrabold text-center leading-4 mb-6">company well-being</div>
 
             <div className="text-center">
               <p className="text-sm font-comfort font-light">With happy employees, employers can enjoy accelerated business growth. We provide in-office massages to employees to prevent employee burnout and higher turnover of staff. Boost the general mood and employee mental health at work.</p>
