@@ -11,44 +11,48 @@ import retention from "../assets/images/retention.png";
 
 const data = [
   {
-    title: "Relief from physical fatigue",
-    desc: "Massage stimulates blood flow to reduce chronic neck pains and muscle stiffness",
-    image: relief,
-  },
-  {
-    title: "Bye-bye stress and anxiety",
-    desc: "Lower stress hormones with the right therapy to enjoy stress-free work life",
-    image: byestress,
-  },
-  {
-    title: "Employee wellness",
-    desc: "Promote good health by strengthening immunity and lowering blood pressure with therapies",
-    image: ewellness,
-  },
-  {
     title: "Positive energy",
     desc: "Reenergize employees with massage therapy to bring more enthusiasm for work",
     image: positiveenergy,
-  },
-  {
-    title: "Lower absenteeism",
-    desc: "In-office head massages make employees look forward to coming back to work.",
-    image: absenteeism,
-  },
-  {
-    title: "Motivated workforce",
-    desc: "Employees without stress build the most motivated workforce",
-    image: motivatedwf,
   },
   {
     title: "Boost employee retention",
     desc: "Retain the best talent with on-time relaxations through head massages",
     image: retention,
   },
+
+  {
+    title: "Lower absenteeism",
+    desc: "In-office head massages make employees look forward to coming back to work.",
+    image: absenteeism,
+  },
+  {
+    title: "Employee wellness",
+    desc: "Promote good health by strengthening immunity and lowering blood pressure with therapies",
+    image: ewellness,
+  },
+
+  {
+    title: "Motivated workforce",
+    desc: "Employees without stress build the most motivated workforce",
+    image: motivatedwf,
+  },
+  {
+    title: "Bye-bye stress and anxiety",
+    desc: "Lower stress hormones with the right therapy to enjoy stress-free work life",
+    image: byestress,
+  },
+
+  {
+    title: "Relief from physical fatigue",
+    desc: "Massage stimulates blood flow to reduce chronic neck pains and muscle stiffness",
+    image: relief,
+  },
+
   {
     title: "Build up healthy work culture",
     desc: "Happier employees love to engage and actively participate in building a healthy work environment.",
-    image: retention,
+    image: healthyculture,
   },
 ];
 function Boxes() {
@@ -60,11 +64,11 @@ function Boxes() {
           <div className="px-3 py-3 lg:mb-12 mb-6 relative basis-full md:basis-[calc(33%-20px)] items-center justify-center rounded overflow-hidden flex">
             <div>
               <div>
-                <img className="w-auto lg:h-44 h-24 m-auto " src={item.image} />
+                <img className="w-auto lg:h-40 h-28 m-auto " src={item.image} />
               </div>
               <div className="flex justify-center flex-col mt-4 lg:mt-8">
                 <div className="text-center font-geomanist text-xl lg:text-2xl">{item.title}</div>
-                <div className="font-comfort text-center">{item.desc}</div>
+                <div className="font-comfort text-center mt-2">{item.desc}</div>
               </div>
             </div>
           </div>
