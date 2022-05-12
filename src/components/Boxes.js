@@ -61,7 +61,7 @@ function Boxes() {
       <div className="px-4 py-3 text-4xl max-w-5xl mx-auto lg:text-6xl mb-0 font-bold text-center font-geomanist ">we help you build a hands-on approach to lifting the spirits and goodwill of your employees</div>
       <div className="flex gap-[20px] px-4 flex-wrap max-w-5xl mx-auto py-8 md:py-12 justify-around">
         {data.map((item) => (
-          <div className="px-3 py-3 lg:mb-12 mb-6 relative basis-full md:basis-[calc(33%-20px)] items-center justify-center rounded overflow-hidden flex">
+          <div className="px-3 py-3 justify-start lg:mb-12 mb-6 relative basis-full md:basis-[calc(33%-20px)] items-center rounded overflow-hidden flex">
             <div>
               <div>
                 <img className="w-auto lg:h-40 h-28 m-auto " src={item.image} />
