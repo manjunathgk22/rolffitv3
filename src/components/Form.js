@@ -123,7 +123,7 @@ function Form() {
                 <input value={formData.phoneNumber} onChange={({ target }) => setValue({ target, key: "phoneNumber" })} class="font-comfort appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="tel" placeholder="Phone number" />
                 <span className="text-sm text-rose-500">{errors.phoneNumber}</span>
               </div>
-              <button onClick={handleSubmit} class="mx-3 hover:font-bold transition-all text-lg w-full  mt-4 border-white  border-4  bg-white  text-black  py-1 rounded font-geomanist" type="button">
+              <button onClick={handleSubmit} class="mx-3 hover:font-bold transition-all text-lg w-full shadow-lg  mt-4 border-white  border-4  bg-white  text-black  py-1 rounded font-geomanist" type="button">
                 Request callback
               </button>
             </div>
