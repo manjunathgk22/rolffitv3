@@ -4,6 +4,7 @@ import "./Form.css";
 import { db } from "../firebase";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
 import congratsanime from "../assets/images/congrats.gif";
+import ReactGA from "react-ga";
 const phoneRegex = `^[6-9]{1}[0-9]{9}$`;
 function Form() {
   const gif = useRef(null);
@@ -77,8 +78,12 @@ function Form() {
 
     try {
       await addDoc(collection(db, "responses"), formData);
+      ReactGA.event({
+        category: "EVENTS",
+        action: "FORM_SUBMITTED",
+      });
     } catch (err) {
-      alert(err);
+      // alert(err);
     }
     setsubmitted(true);
   };

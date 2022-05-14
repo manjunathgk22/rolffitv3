@@ -3,12 +3,21 @@ import HeaderImg from "../assets/images/Hero-Image-Raw.jpg";
 import Styles from "./Header.module.css";
 import { ReactComponent as LogoSVG } from "../assets/images/logo_rolf_logo.svg";
 import Nav from "./Nav";
+import ReactGA from "react-ga";
 function Header() {
   const scrolltoHowItWorks = () => {
     document.getElementById("howitworks")?.scrollIntoView({ block: "start", behavior: "smooth" });
+    ReactGA.event({
+      category: "EVENTS",
+      action: "CLICK_ON_HOW_IT_WORKS",
+    });
   };
   const scrollToDemo = () => {
     document.getElementById("contact")?.scrollIntoView({ block: "start", behavior: "smooth" });
+    ReactGA.event({
+      category: "EVENTS",
+      action: "CLICK_ON_FREE_DEMO",
+    });
   };
   return (
     <div style={{ height: "90vh" }} className={` flex max-h-[615px] mb-8 lg:mb-16 lg:max-h-[90vh] items-center bg-[url('/src/assets/images/hero.jpeg')] bg-cover bg-no-repeat relative bg-bottom ${Styles.headerwrapper}`}>

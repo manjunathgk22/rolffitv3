@@ -19,18 +19,20 @@ import WhyWeSlider from "./components/WhyWeSlider";
 import Stats from "./components/Stats";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import colors from "tailwindcss/colors";
+import ReactGA from "react-ga";
 // const Header = lazy(() => "./components/Header");
 // const Mission = lazy(() => import("./components/Mission"));
 // const Info = lazy(() => import("./components/Info"));
 // const Boxes = lazy(() => import("./components/Boxes"));
 // const HowItWorks = lazy(() => import("./components/HowItWorks"));
 // const WhyWe = lazy(() => import("./components/WhyWe"));
-
+ReactGA.initialize("G-38QH77R2NN");
 function App() {
   const [showanime, setshowanime] = useState(true);
   const contact = useRef(null);
   const contactlg = useRef(null);
   useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
     setTimeout(() => {
       setshowanime(false);
     }, 3000);
