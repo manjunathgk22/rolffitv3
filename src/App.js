@@ -19,20 +19,21 @@ import WhyWeSlider from "./components/WhyWeSlider";
 import Stats from "./components/Stats";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import colors from "tailwindcss/colors";
-import ReactGA from "react-ga";
+import ReactGA4 from "react-ga4";
+
 // const Header = lazy(() => "./components/Header");
 // const Mission = lazy(() => import("./components/Mission"));
 // const Info = lazy(() => import("./components/Info"));
 // const Boxes = lazy(() => import("./components/Boxes"));
 // const HowItWorks = lazy(() => import("./components/HowItWorks"));
 // const WhyWe = lazy(() => import("./components/WhyWe"));
-ReactGA.initialize("G-38QH77R2NN");
 function App() {
   const [showanime, setshowanime] = useState(true);
   const contact = useRef(null);
   const contactlg = useRef(null);
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
+    ReactGA4.send({ hitType: "pageview", page: window.location.pathname });
+
     setTimeout(() => {
       setshowanime(false);
     }, 3000);
@@ -60,7 +61,6 @@ function App() {
       // contactlg.current.style.height = "auto";
       contactlg.current.style.opacity = 1;
     }
-    console.log(scrollTop);
   };
   return showanime ? (
     <div className="flex justify-center items-center h-screen w-screen">

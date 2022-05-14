@@ -23,7 +23,6 @@ function WhyWeSlider() {
     autoplaySpeed: 30000,
     animating: false,
     appendDots: (dots) => {
-      console.log("dots", dots);
       return (
         <div
           style={{
@@ -34,34 +33,31 @@ function WhyWeSlider() {
             paddingTop: "2rem",
           }}
         >
-          {dots?.map((item) => (
-            <div className="dotWrapper flex whitespace-nowrap w-5/6 md:w-auto min-w-[83%] md:min-w-[auto]">{item}</div>
+          {dots?.map((item, i) => (
+            <div index={i} className="dotWrapper flex whitespace-nowrap w-5/6 md:w-auto min-w-[83%] md:min-w-[auto]">
+              {item}
+            </div>
           ))}
         </div>
       );
     },
     customPaging: (i, ...props) => {
-      console.log("customPaging", i, props);
       return (
         <div>
           <div className="dotText">{dotsText[i]}</div>
-          <div class="slider-progress">
-            <div class="progress"></div>
+          <div className="slider-progress">
+            <div className="progress"></div>
           </div>
         </div>
       );
     },
     beforeChange: (page) => {
-      // console.log("qqq", props);
       if (window.innerWidth < 640) {
         const wrapper = dotRef.current.getElementsByClassName("slick-dots")[0];
-        console.log("www", wrapper.srcollLeft, page);
         if (wrapper) wrapper.scrollLeft = wrapper.getElementsByTagName("li")[0]?.clientWidth * (page + 1);
       }
     },
-    afterChange: (...props) => {
-      // console.log("www", props);
-    },
+    afterChange: (...props) => {},
   };
   const variants = {
     visible: { opacity: 1, background: "red" },

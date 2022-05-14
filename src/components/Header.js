@@ -3,21 +3,19 @@ import HeaderImg from "../assets/images/Hero-Image-Raw.jpg";
 import Styles from "./Header.module.css";
 import { ReactComponent as LogoSVG } from "../assets/images/logo_rolf_logo.svg";
 import Nav from "./Nav";
-import ReactGA from "react-ga";
+import ReactGA4 from "react-ga4";
+import logEvent from "../util/util";
+
 function Header() {
   const scrolltoHowItWorks = () => {
     document.getElementById("howitworks")?.scrollIntoView({ block: "start", behavior: "smooth" });
-    ReactGA.event({
-      category: "EVENTS",
-      action: "CLICK_ON_HOW_IT_WORKS",
+    logEvent({
+      action: "CLICK_ON_HOWITWORKS",
     });
   };
   const scrollToDemo = () => {
     document.getElementById("contact")?.scrollIntoView({ block: "start", behavior: "smooth" });
-    ReactGA.event({
-      category: "EVENTS",
-      action: "CLICK_ON_FREE_DEMO",
-    });
+    logEvent({ action: "CLICK_ON_FREEDEMO" });
   };
   return (
     <div style={{ height: "90vh" }} className={` flex max-h-[615px] mb-8 lg:mb-16 lg:max-h-[90vh] items-center bg-[url('/src/assets/images/hero.jpeg')] bg-cover bg-no-repeat relative bg-bottom ${Styles.headerwrapper}`}>
@@ -31,10 +29,10 @@ function Header() {
         </h1>
         <div className=" text-2xl md:mt-8 mt-4 font-comfort">boost business productivity with mini-massage breaks on office premises.</div>
         <div className="flex-col flex sm:flex-row gap-2 mt-6">
-          <button onClick={scrolltoHowItWorks} class="mx-3 hover:font-bold transition-all text-sm sm:text-lg lg:w-fit px-8 w-full mt-4 border-black  border-2 bg-black text-white py-2 rounded font-geomanist ml-0" type="button">
+          <button onClick={scrolltoHowItWorks} className="mx-3 hover:font-bold transition-all text-sm sm:text-lg lg:w-fit px-8 w-full mt-4 border-black  border-2 bg-black text-white py-2 rounded font-geomanist ml-0" type="button">
             How it works
           </button>
-          <button onClick={scrollToDemo} class="mx-3 hover:font-bold transition-all text-sm sm:text-lg lg:w-fit px-8 w-full mt-4 border-white  border-2  bg-white  text-black  py-2 rounded font-geomanist ml-0" type="button">
+          <button onClick={scrollToDemo} className="mx-3 hover:font-bold transition-all text-sm sm:text-lg lg:w-fit px-8 w-full mt-4 border-white  border-2  bg-white  text-black  py-2 rounded font-geomanist ml-0" type="button">
             Get FREE demo
           </button>
         </div>

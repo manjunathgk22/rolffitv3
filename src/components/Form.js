@@ -4,9 +4,14 @@ import "./Form.css";
 import { db } from "../firebase";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
 import congratsanime from "../assets/images/congrats.gif";
-import ReactGA from "react-ga";
+import ReactGA4 from "react-ga4";
+import logEvent from "../util/util";
+
 const phoneRegex = `^[6-9]{1}[0-9]{9}$`;
-function Form() {
+function Form(props) {
+  console.log("====================================");
+  console.log(props);
+  console.log("====================================");
   const gif = useRef(null);
   const [submitted, setsubmitted] = useState(false);
   const [formData, setformData] = useState({
@@ -75,17 +80,13 @@ function Form() {
 
   const handleSubmit = async () => {
     if (!validateForm()) return;
-
+    setsubmitted(true);
     try {
       await addDoc(collection(db, "responses"), formData);
-      ReactGA.event({
-        category: "EVENTS",
-        action: "FORM_SUBMITTED",
-      });
     } catch (err) {
       // alert(err);
     }
-    setsubmitted(true);
+    logEvent({ action: "FORM_SUBMIT" });
   };
   const setValue = ({ target, key }) => {
     seterrors({
@@ -108,27 +109,27 @@ function Form() {
             <img ref={gif} src={congratsanime} alt="animation gif" />
           </div>
         ) : (
-          <form class="">
-            <div class="flex flex-wrap -mx-3">
-              <div class="w-full px-3 mb-6 ">
-                <input value={formData.name} onChange={({ target }) => setValue({ target, key: "name" })} class="font-comfort appearance-none rounded block w-full bg-white text-gray-700 borderrounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Name" />
+          <form className="">
+            <div className="flex flex-wrap -mx-3">
+              <div className="w-full px-3 mb-6 ">
+                <input value={formData.name} onChange={({ target }) => setValue({ target, key: "name" })} className="font-comfort appearance-none rounded block w-full bg-white text-gray-700 borderrounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Name" />
                 <span className="text-sm text-rose-500">{errors.name}</span>
-                {/* <p class="text-red-500 text-xs italic">Please fill out this field.</p> */}
+                {/* <p className="text-red-500 text-xs italic">Please fill out this field.</p> */}
               </div>
-              <div class="w-full px-3 mb-6 ">
-                <input value={formData.companyName} onChange={({ target }) => setValue({ target, key: "companyName" })} class="font-comfort appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Company name" />
+              <div className="w-full px-3 mb-6 ">
+                <input value={formData.companyName} onChange={({ target }) => setValue({ target, key: "companyName" })} className="font-comfort appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Company name" />
                 <span className="text-sm text-rose-500">{errors.companyName}</span>
               </div>
 
-              <div class="w-full px-3 mb-6 ">
-                <input value={formData.email} onChange={({ target }) => setValue({ target, key: "email" })} class="font-comfort appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Email id" />
+              <div className="w-full px-3 mb-6 ">
+                <input value={formData.email} onChange={({ target }) => setValue({ target, key: "email" })} className="font-comfort appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Email id" />
                 <span className="text-sm text-rose-500">{errors.email}</span>
               </div>
-              <div class="w-full px-3 mb-6 ">
-                <input value={formData.phoneNumber} onChange={({ target }) => setValue({ target, key: "phoneNumber" })} class="font-comfort appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="tel" placeholder="Phone number" />
+              <div className="w-full px-3 mb-6 ">
+                <input value={formData.phoneNumber} onChange={({ target }) => setValue({ target, key: "phoneNumber" })} className="font-comfort appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="tel" placeholder="Phone number" />
                 <span className="text-sm text-rose-500">{errors.phoneNumber}</span>
               </div>
-              <button onClick={handleSubmit} class="mx-3 hover:font-bold transition-all text-lg w-full shadow-lg  mt-4 border-white  border-4  bg-white  text-black  py-1 rounded font-geomanist" type="button">
+              <button onClick={handleSubmit} className="mx-3 hover:font-bold transition-all text-lg w-full shadow-lg  mt-4 border-white  border-4  bg-white  text-black  py-1 rounded font-geomanist" type="button">
                 Request callback
               </button>
             </div>

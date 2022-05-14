@@ -27,12 +27,12 @@
   background-repeat: no-repeat;
   background-size: contain;
   bottom: 0;
-  content: '';
+  content: "";
   display: block;
   padding-top: 3.82%;
   position: absolute;
   -webkit-transform: translateY(75%);
-          transform: translateY(75%);
+  transform: translateY(75%);
   width: 100%;
 }
 

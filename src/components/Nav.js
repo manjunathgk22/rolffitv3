@@ -1,8 +1,10 @@
+/* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react"; // import state
 // import { ReactComponent as LogoSVG } from "../assets/images/logo_rolf_logo.svg";
 import logo from "../assets/images/logo_rolf_logo.svg";
+import logEvent from "../util/util";
 import Styles from "./Header.module.css";
 
 export default function Header() {
@@ -10,26 +12,32 @@ export default function Header() {
   const gotoHome = () => {
     document.getElementById("home")?.scrollIntoView({ block: "start", behavior: "smooth" });
     setIsNavOpen(false);
+    logEvent({ action: "CLICK_ON_GOTOHOME" });
   };
   const gotohowitwors = () => {
     document.getElementById("howitworks")?.scrollIntoView({ block: "end", behavior: "smooth" });
     setIsNavOpen(false);
+    logEvent({ action: "CLICK_ON_HOWITWORKS" });
   };
   const gotocontact = () => {
     document.getElementById("contact")?.scrollIntoView({ block: "start", behavior: "smooth" });
     setIsNavOpen(false);
+    logEvent({ action: "CLICK_ON_FREEDEMO" });
   };
   const gotofaq = () => {
     document.getElementById("faq")?.scrollIntoView({ block: "start", behavior: "smooth" });
     setIsNavOpen(false);
+    logEvent({ action: "CLICK_ON_GOTOFAQ" });
   };
   const gotbenefits = () => {
     document.getElementById("benefits")?.scrollIntoView({ block: "start", behavior: "smooth" });
     setIsNavOpen(false);
+    logEvent({ action: "CLICK_ON_GOTOBENEFITS" });
   };
   const gotoHealth = () => {
     document.getElementById("whywedoit")?.scrollIntoView({ block: "start", behavior: "smooth" });
     setIsNavOpen(false);
+    logEvent({ action: "CLICK_ON_GOTOHEALTH" });
   };
   return (
     <div className=" z-40 flex items-center justify-between grow py-8 lg:justify-center lg:items-center">
@@ -59,33 +67,33 @@ export default function Header() {
                 </svg>
               </div>
               <ul className="MENU-LINK-MOBILE-OPEN flex px-8 flex-col items-center justify-between min-h-[250px]">
-                <li class="w-full mb-8">
-                  <a class="text-black font-geomanist text-4xl relative font-bold" onClick={gotoHome}>
+                <li className="w-full mb-8">
+                  <a className="text-black font-geomanist text-4xl relative font-bold" onClick={gotoHome}>
                     home
                   </a>
                 </li>
                 <li className="w-full mb-8">
-                  <a class="text-black font-geomanist text-4xl relative font-bold" onClick={gotohowitwors}>
+                  <a className="text-black font-geomanist text-4xl relative font-bold" onClick={gotohowitwors}>
                     how it works
                   </a>
                 </li>
                 <li className="w-full mb-8">
-                  <a class="text-black font-geomanist text-4xl relative font-bold" onClick={gotoHealth}>
+                  <a className="text-black font-geomanist text-4xl relative font-bold" onClick={gotoHealth}>
                     mental health
                   </a>
                 </li>
                 <li className="w-full mb-8">
-                  <a class="text-black font-geomanist text-4xl relative font-bold" onClick={gotbenefits}>
+                  <a className="text-black font-geomanist text-4xl relative font-bold" onClick={gotbenefits}>
                     benefits
                   </a>
                 </li>
                 <li className="w-full mb-8">
-                  <a class="text-black font-geomanist text-4xl relative font-bold" onClick={gotofaq}>
+                  <a className="text-black font-geomanist text-4xl relative font-bold" onClick={gotofaq}>
                     faqs
                   </a>
                 </li>
                 <li className="w-full mb-8">
-                  <a class="text-black font-geomanist text-4xl relative font-bold" onClick={gotocontact}>
+                  <a className="text-black font-geomanist text-4xl relative font-bold" onClick={gotocontact}>
                     contact
                   </a>
                 </li>
@@ -96,33 +104,33 @@ export default function Header() {
       </section>
 
       <ul className="DESKTOP-MENU hidden space-x-8 lg:flex grow justify-end mr-8">
-        {/* <li class=" mb-8">
-          <a class="text-white cursor-pointer text-4xl lg:text-lg relative font-bold" onClick={gotoHome}>
+        {/* <li className=" mb-8">
+          <a className="text-white cursor-pointer text-4xl lg:text-lg relative font-bold" onClick={gotoHome}>
             home
           </a>
         </li> */}
         <li className=" mb-8">
-          <a class="text-white cursor-pointer text-4xl lg:text-lg relative font-bold" onClick={gotohowitwors}>
+          <a className="text-white cursor-pointer text-4xl lg:text-lg relative font-bold" onClick={gotohowitwors}>
             how it works
           </a>
         </li>
         <li className=" mb-8">
-          <a class="text-white cursor-pointer text-4xl lg:text-lg relative font-bold" onClick={gotoHealth}>
+          <a className="text-white cursor-pointer text-4xl lg:text-lg relative font-bold" onClick={gotoHealth}>
             mental health
           </a>
         </li>
         <li className=" mb-8">
-          <a class="text-white cursor-pointer text-4xl lg:text-lg relative font-bold" onClick={gotbenefits}>
+          <a className="text-white cursor-pointer text-4xl lg:text-lg relative font-bold" onClick={gotbenefits}>
             benefits
           </a>
         </li>
         <li className=" mb-8">
-          <a class="text-white cursor-pointer text-4xl lg:text-lg relative font-bold" onClick={gotofaq}>
+          <a className="text-white cursor-pointer text-4xl lg:text-lg relative font-bold" onClick={gotofaq}>
             faqs
           </a>
         </li>
         <li className=" mb-8">
-          <a class="text-white cursor-pointer text-4xl lg:text-lg relative font-bold" onClick={gotocontact}>
+          <a className="text-white cursor-pointer text-4xl lg:text-lg relative font-bold" onClick={gotocontact}>
             contact
           </a>
         </li>

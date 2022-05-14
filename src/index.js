@@ -3,7 +3,18 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-
+import ReactGA4 from "react-ga4";
+try {
+  ReactGA4.initialize([
+    {
+      trackingId: "G-38QH77R2NN",
+      gaOptions: { debug_mode: false },
+      gtagOptions: { debug_mode: false },
+    },
+  ]);
+} catch (err) {
+  console.error(err);
+}
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
