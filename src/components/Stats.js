@@ -38,7 +38,7 @@ function Stats() {
         <div className="w-full lg:w-1/3">
           <div className="px-3 py-3">
             <div className={`py-4 bg-pink-150 px-14 relative font-comfort `}>
-              <p className="text-lg font-bold font-geomanist">More than 1 in 5 admitted to calling in sick to avoid workplace stress with 32% even considering resigning.</p>
+              <p className="text-lg font-bold font-geomanist">more than 1 in 5 admitted to calling in sick to avoid workplace stress with 32% even considering resigning.</p>
 
               <svg xmlns="http://www.w3.org/2000/svg" className="w-full h-full absolute left-0 bottom-0 text-white pointer-events-none" viewBox="0 0 331 227.75" preserveAspectRatio="none">
                 <g data-name="Layer 2">

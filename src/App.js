@@ -80,16 +80,11 @@ function App() {
               </FadeInWhenVisible>
             </section>
 
-            <section id="info">
+            {/*<section id="info">
               <FadeInWhenVisible>
                 <Info />
               </FadeInWhenVisible>
-            </section>
-            <section id="howitworks">
-              <FadeInWhenVisible>
-                <HowItWorks />
-              </FadeInWhenVisible>
-            </section>
+            </section> */}
             <section id="whywedoit" style={{ background: "white" }}>
               <FadeInWhenVisible>
                 <WhyWe />
@@ -103,6 +98,11 @@ function App() {
               <FadeInWhenVisible>
                 <Boxes />
                 {/* <WhyWeSlider /> */}
+              </FadeInWhenVisible>
+            </section>
+            <section id="howitworks">
+              <FadeInWhenVisible>
+                <HowItWorks />
               </FadeInWhenVisible>
             </section>
             {/* <section>

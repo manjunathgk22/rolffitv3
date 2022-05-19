@@ -5,13 +5,13 @@ import missionimg from "../assets/images/mission.jpeg";
 
 function Mission() {
   return (
-    <div className="container-lg m-auto pb-16 pt-4 md:py-18 lg:py-25 lg:w-4/5 w-11/12 relative z-10 flex flex-wrap-reverse lg:flex-wrap">
+    <div className="container-lg m-auto pt-4 md:py-18 lg:py-25 lg:w-4/5 w-11/12 relative z-10 flex flex-wrap-reverse lg:flex-wrap">
       <div className="w-full md:w-1/2 xl:w-2/5 md:pt-4 md:pr-7 lg:pr-12 xl:pr-17">
         <h2 className=" lg:text-7xl text-4xl font-extrabold text-center md:text-left font-geomanist">our mission is simple...</h2>
 
-        <div className="text-sm font-comfort font-light md:text-lg pb-4 mt-8 text-center md:text-left">
+        <div className="text-sm font-comfort font-light md:text-lg mt-8 text-center md:text-left">
           <p className="larger-normal-text">
-            We believe that happy and stress-free employees drive a successful business. Our mission is to break workplace stress through different relaxation aids. We aim to provide quality services to companies looking to build a healthy and motivated workforce. We strive to create moments of joy and immersive in-office bonding experiences.
+            We believe that happy and stress-free employees drive a successful business. <br/><br/>Our mission is to break workplace stress through different relaxation aids. We aim to provide quality services to companies looking to build a healthy and motivated workforce. We strive to create moments of joy and immersive in-office bonding experiences.
             <br />
           </p>
         </div>

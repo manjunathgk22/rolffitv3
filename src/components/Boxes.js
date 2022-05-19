@@ -11,54 +11,52 @@ import retention from "../assets/images/retention.png";
 
 const data = [
   {
-    title: "Positive energy",
+    title: "positive energy",
     desc: "Reenergize employees with massage therapy to bring more enthusiasm for work",
     image: positiveenergy,
   },
   {
-    title: "Boost employee retention",
+    title: "boost employee retention",
     desc: "Retain the best talent with on-time relaxations through head massages",
     image: retention,
   },
 
   {
-    title: "Lower absenteeism",
+    title: "lower absenteeism",
     desc: "In-office head massages make employees look forward to coming back to work.",
     image: absenteeism,
   },
   {
-    title: "Employee wellness",
+    title: "employee wellness",
     desc: "Promote good health by strengthening immunity and lowering blood pressure with therapies",
     image: ewellness,
   },
 
   {
-    title: "Motivated workforce",
+    title: "motivated workforce",
     desc: "Employees without stress build the most motivated workforce",
     image: motivatedwf,
   },
   {
-    title: "Bye-bye stress and anxiety",
-    desc: "Lower stress hormones with the right therapy to enjoy stress-free work life",
-    image: byestress,
+    title: "healthy work culture",
+    desc: "Happier employees love to engage and actively participate in building a healthy work environment.",
+    image: healthyculture,
   },
-
   {
-    title: "Relief from physical fatigue",
+    title: "relief from physical fatigue",
     desc: "Massage stimulates blood flow to reduce chronic neck pains and muscle stiffness",
     image: relief,
   },
-
   {
-    title: "Build up healthy work culture",
-    desc: "Happier employees love to engage and actively participate in building a healthy work environment.",
-    image: healthyculture,
+    title: "bye-bye stress and anxiety",
+    desc: "Lower stress hormones with the right therapy to enjoy stress-free work life",
+    image: byestress,
   },
 ];
 function Boxes() {
   return (
     <div className="container m-auto boxes-container">
-      <div className="px-4 py-3 text-4xl max-w-5xl mx-auto lg:text-6xl mb-0 font-bold text-center font-geomanist ">we help you build a hands-on approach to lifting the spirits and goodwill of your employees</div>
+      <div className="px-4 py-3 text-4xl max-w-5xl mx-auto lg:text-6xl mb-0 font-bold text-center font-geomanist ">lift the spirits and goodwill of your employees</div>
       <div className="flex gap-[20px] px-4 flex-wrap max-w-5xl mx-auto py-8 md:py-12 justify-around">
         {data.map((item, i) => (
           <div key={i} className="px-3 py-3 justify-center items-start lg:mb-12 mb-6 relative basis-full md:basis-[calc(33%-20px)] items-center rounded overflow-hidden flex">
