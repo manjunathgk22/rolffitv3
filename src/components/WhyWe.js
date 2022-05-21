@@ -7,7 +7,7 @@ function WhyWe() {
         <div className="h5 sm:h4 md:h3 lg:text-6xl text-4xl font-bold text-center mb-8 font-geomanist">why we do it?</div>
 
         <div className="text-center pb-2">
-          <p className="text-sm sm:text-lg font-comfort">Our sessions provide a chance to ‘switch off’ from mental stressors and can also lower blood pressure as well as decreasing levels of the stress-related hormone cortisol.</p>
+          <p className="text-sm sm:text-lg font-comfort">Our sessions provide a chance to <span className="font-extrabold">‘switch off’</span> from mental stressors and can also lower blood pressure as well as decreasing levels of the stress-related hormone cortisol.</p>
         </div>
 
         {/* <a className="btn " href="https://www.pawsinwork.com/the-benefits" target="">

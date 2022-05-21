@@ -12,7 +12,7 @@ function Checklist() {
             get a free demo
           </span>
           <span data-v-ed816bee="" className="text-sm font-comfort font-light">
-            Get in touch with our team to get in-office services. We offer 3 days trial at your office premises.
+            Book your event with our qualified massage therapists.<br/>We are offering <span className="font-extrabold">1 day free trial</span> at your office premises.
           </span>
         </div>
       </li>
@@ -22,10 +22,11 @@ function Checklist() {
             2
           </div>
           <span data-v-ed816bee="" className="text-2xl md:text-2xl lg:text-2xl font-extrabold mb-2 block font-geomanist">
-            discuss your needs
+            employees book slots
           </span>
           <span data-v-ed816bee="" className="text-sm font-comfort font-light">
-            Discuss your office requirements and pricing plans suitable to cater for your workplace needs. Choose suitable plans or create customised ones.
+            your employees reserve <span className="font-extrabold">15 minute sessions</span> via our <span className="font-extrabold">online booking system</span>.
+            15 minute sessions often work best but we can adjust as needed.
           </span>
         </div>
       </li>
@@ -35,10 +36,23 @@ function Checklist() {
             3
           </div>
           <span data-v-ed816bee="" className="text-2xl md:text-2xl lg:text-2xl font-extrabold mb-2 block font-geomanist">
-            build a healthy workplace together
+            quick setup at your office
           </span>
           <span data-v-ed816bee="" className="text-sm font-comfort font-light">
-            Upon choosing the plans, our therapist set up the space, ready for your employees to enjoy the services. Every employee is served with utmost professionalism. All you need to do is sit back and relax!
+            After reservation, our massage therapists arrive and quickly set up specialist massage chairs in a private area
+          </span>
+        </div>
+      </li>
+      <li data-v-ed816bee="" className="CheckList__wrapper">
+        <div data-v-ed816bee="" className="CheckList__item">
+          <div data-v-ed816bee="" className="CheckList__item__number">
+            4
+          </div>
+          <span data-v-ed816bee="" className="text-2xl md:text-2xl lg:text-2xl font-extrabold mb-2 block font-geomanist">
+            avail relaxation without hampering your work schedule!
+          </span>
+          <span data-v-ed816bee="" className="text-sm font-comfort font-light">
+            The invoice is generated after completion of our service term. <span className="font-extrabold">Request a callback 👉🏾</span>
           </span>
         </div>
       </li>
