@@ -3,6 +3,14 @@ import { useState } from "react";
 import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
 import Styles from "./Accordion.module.css";
 import { AiOutlineDown, AiOutlineUp } from "react-icons/ai";
+import Con1 from "../assets/images/con1.svg";
+import Con2 from "../assets/images/con2.svg";
+import Con3 from "../assets/images/con3.svg";
+import Con4 from "../assets/images/con4.svg";
+import Con5 from "../assets/images/con5.svg";
+import Con6 from "../assets/images/con6.svg";
+import Con7 from "../assets/images/con7.svg";
+import Con8 from "../assets/images/con8.svg";
 
 /**
  * This is an example of animating shared layouts in Framer Motion 2.
@@ -18,13 +26,13 @@ export default function Accordion() {
   return (
     <AnimateSharedLayout>
       <div className="px-3 container m-auto">
-        <div className="flex flex-wrap max-w-5xl mx-auto py-10 md:py-16 lg:py-21 justify-center">
+        <div className="flex-col flex-wrap max-w-5xl mx-auto py-10 md:py-16 lg:py-21 justify-center">
           <div className="h5 sm:h4 md:h3 text-4xl lg:text-6xl font-bold mb-12 text-center font-geomanist">frequently asked questions</div>
-          <motion.ul className={`${Styles.ul}`} layout initial={{ borderRadius: 25 }}>
-            {items.map((item, i) => (
-              <Item item={item} key={i} />
+          <div className="flex flex-wrap justify-center lg:justify-evenly">
+            {items?.map((item) => (
+              <img className="flex h-[250px] w-auto mt-12 basis-[33%]" src={item.src} />
             ))}
-          </motion.ul>
+          </div>
         </div>
       </div>
     </AnimateSharedLayout>
@@ -60,41 +68,41 @@ const items = [
   {
     title: "Can I get a free trial for my office?",
     desc: "Yes, We provide 3 day free trial for our partners at their office premises",
+    src: Con1,
   },
   {
     title: "Do I get privacy during the massage?",
     desc: "Our massage setup provides the required privacy to the employees. You do not need any removal of clothes to get the service. ",
+    src: Con2,
   },
   {
     title: "What are the requirements to get a massage?",
-    desc: "As an employee, you can approach the employer to get in touch with us for in-office massages. As an employer, you can connect with our team to get a free trial or book a service for your office.",
+    desc: "As an employee, you can approach the employer to get in touch with us for in-office massages. As an employer, you can con />nect with our team to get a free trial or book a service for your office",
+    src: Con3,
   },
   {
     title: "How can I set up your massages in my office?",
     desc: "The employer can approach us directly for booking the massage services for their office.",
+    src: Con4,
   },
   {
     title: "Are the therapists certified and licensed?",
     desc: "Yes, all our therapists are certified and licensed.",
+    src: Con5,
   },
   {
     title: "Are the oils used in massage authentic?",
     desc: `No, we won't be using oils, every product used during the massage gets thorough our quality checks to ensure that only genuine products are used.`,
+    src: Con6,
   },
   {
     title: "Does the massage work on headaches?",
     desc: "Yes, our therapeutic scalp therapy can reduce headaches.",
+    src: Con7,
   },
   {
     title: "Can I choose the gender of the therapist?",
     desc: "You can avail the therapist of your choice present at your office.",
-  },
-  {
-    title: "Do my employees need to tip the therapist?",
-    desc: "Our therapists are paid service charges by us. You or your employees do not need to tip them for their services.",
-  },
-  {
-    title: "Can a friend who is not an employee of the company avail the massage?",
-    desc: "No, our services are strictly restricted to the employees of our client.",
+    src: Con8,
   },
 ];
