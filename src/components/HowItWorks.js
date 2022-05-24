@@ -92,7 +92,7 @@ function HowItWorks() {
             <div style={{}} className="mb-8 flex-col justify-center items-center md:flex md:flex-row">
               <div className="animate-left">
                 {/* <img className="image lg:h-96 md:h-80 h-44" style={{ width: "100%", boxSizing: "border-box", padding: "2rem", margin: "0" }} src="https://www.plan.london/wp-content/uploads/2021/11/Icons-Final-17.png" data-src="https://www.plan.london/wp-content/uploads/2021/11/Icons-Final-17.png" alt="" height="2197" width="2813" data-mobile-image="https://www.plan.london/wp-content/uploads/2021/11/Icons-Final-17.png" data-mobile-image-width="1024" data-mobile-image-height="800" />{" "} */}
-                <div style={{ height: "350px", width: "auto", backgroundSize: "cover", backgroundRepeat: "no-repeat", position: "relative" }} className=" lg:m-8 m-4 bg-[url('/src/assets/images/chair.jpeg')]">
+                <div style={{ height: "350px", width: "auto", backgroundSize: "cover", backgroundRepeat: "no-repeat", position: "relative" }} className=" lg:m-8 m-4 bg-[url('/src/assets/images/chairmassage.jpg')]">
                   {/* <img style={{ width: "100%", boxSizing: "border-box", margin: "0" }} className="image lg:h-96 md:h-80 h-44" src={tent} alt="" height="2197" width="2813" data-mobile-image-width="1024" data-mobile-image-height="800" />{" "} */}
                   <svg xmlns="http://www.w3.org/2000/svg" className="w-full h-full absolute left-0 bottom-0 text-white wheatsvg pointer-events-none" viewBox="0 0 331 227.75" preserveAspectRatio="none">
                     <g data-name="Layer 2">
