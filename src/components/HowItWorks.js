@@ -103,7 +103,7 @@ function HowItWorks() {
               </div>
               <div className="content-container animate-right" style={{ flex: 1 }}>
                 <h3 className="text-2xl md:text-3xl lg:text-3xl font-bold mb-4 font-geomanist">special chair therapy</h3>
-                <li className="bullet">Our masseuses are professionally trained to give you seated head, neck shoulder and back massages that instantly lift your spirits and give you a boost of energy.</li>
+                <li className="bullet">Our masseuses are professionally trained to give you seated head, neck, shoulder and back massages that instantly lift your spirits and give you a boost of energy.</li>
                 <li className="bullet">No clothing is removed or oils are used.</li>
                 <li className="bullet">Each massage is concluded with a re-energising facial spritz.</li>
               </div>

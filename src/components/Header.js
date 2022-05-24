@@ -27,7 +27,7 @@ function Header() {
         <h1 className="font-geomanist font-bold text-4xl lg:text-6xl mt-20">
           ready to make your employees happy and <span className={`${Styles.highlighbottomline} `}>motivated?</span>
         </h1>
-        <div className=" text-2xl md:mt-8 mt-4 font-comfort">boost business productivity with stress-busting mini head massage breaks on office premises.</div>
+        <div className=" text-2xl md:mt-8 mt-4 font-comfort">boost business productivity with stress-busting mini head-massage breaks on office premises.</div>
         <div className="flex-col flex sm:flex-row gap-2 mt-6">
           <button onClick={scrolltoHowItWorks} className="mx-3 hover:font-bold transition-all text-sm sm:text-lg lg:w-fit px-8 w-full mt-4 border-black  border-2 bg-black text-white py-2 rounded font-geomanist ml-0" type="button">
             How it works
